@@ -6,14 +6,18 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField] TwinSticksController twinSticksController;
+    [SerializeField] Player player;
     private Vector2 speed;
     private Vector2 rotation;
     
     private void Update()
     {
-        twinSticksController.Move(speed);
-        twinSticksController.Rotate(rotation);
+        if (player.IsControlled())
+		{
+            player.Move(speed);
+            player.Rotate(rotation);
+        }
+
     }
 
     public void Move (InputAction.CallbackContext context)
@@ -29,13 +33,11 @@ public class InputManager : MonoBehaviour
 
     public void Rotate(InputAction.CallbackContext context)
     {
-        if (context.canceled)
-            speed = Vector2.zero;
-        
         if (!context.performed)
             return;
         
         rotation = context.ReadValue<Vector2>();
+        Debug.Log(rotation);
     }
     
     public void Fire(InputAction.CallbackContext context)
@@ -43,6 +45,6 @@ public class InputManager : MonoBehaviour
         if (!context.performed)
             return;
 
-        twinSticksController.Fire();
+        player.Fire();
     }
 }
