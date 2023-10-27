@@ -22,7 +22,7 @@ public class RoomGenerator : MonoBehaviour
 
         GenerateRoom(roomPrefabs[0], Vector3.zero);
 
-        for(int i=0; i < 100; i++)
+        for(int i=0; i < 15; i++)
         {
             GameObject randomRoom = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
             int randomRoomPositionIndex = Random.Range(0, possibleRoomPosition.Count);
@@ -39,9 +39,8 @@ public class RoomGenerator : MonoBehaviour
 
     private void GenerateRoom(GameObject room, Vector3 roomPosition)
     {
-        GameObject newRoom = Instantiate(room, roomPosition, Quaternion.identity);
+        GameObject newRoom = Instantiate(room, roomPosition, Quaternion.identity, transform);
         occupiedRoomPositions.Add(roomPosition);
-        //room.transform.parent = gameObject.transform;
         Vector3[] vector3s = { roomPosition + Vector3.forward * zDimension,
                                 roomPosition + Vector3.back * zDimension,
                                 roomPosition + Vector3.right * xDimension,
