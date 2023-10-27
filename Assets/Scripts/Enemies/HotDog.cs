@@ -4,6 +4,7 @@ using UnityEngine;
 public class HotDog : Enemy
 {
 	[SerializeField] private Animator animator;
+	
 	protected override IEnumerator AI()
 	{
 		while (true)
@@ -15,5 +16,10 @@ public class HotDog : Enemy
 			// skok jest niedokładny
 			yield return null;
 		}
+	}
+
+	void Jump()
+	{
+		// TODO
 	}
 }
