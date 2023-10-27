@@ -18,14 +18,24 @@ public class Entity : MonoBehaviour
     
     [SerializeField] private Weapon weapon;
 
-    public virtual void Fire()
+	public virtual void Move(Vector2 vector2)
+	{
+		
+	}
+
+	public virtual void Rotate(Vector2 vector2)
+	{
+		
+	}
+
+	public virtual void Fire()
     {
 	    if (!weapon)
 		    return;
 		weapon.Fire();
     }
 
-    public virtual void Die()
+	public virtual void Die()
     {
 		Destroy(gameObject);
     }
