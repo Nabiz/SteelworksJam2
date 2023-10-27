@@ -37,7 +37,7 @@
                 {
                     "name": "",
                     "id": "1c624309-58bf-4781-829a-2800298d67aa",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -138,7 +138,7 @@
                     "id": "6edc6312-de5b-43f5-ab12-61c09ef5df40",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "NormalizeVector2",
                     "groups": "",
                     "action": "Move",
                     "isComposite": false,
