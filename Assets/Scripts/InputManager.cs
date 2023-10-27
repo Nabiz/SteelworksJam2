@@ -37,6 +37,7 @@ public class InputManager : MonoBehaviour
             return;
         
         rotation = context.ReadValue<Vector2>();
+        Debug.Log(rotation);
     }
     
     public void Fire(InputAction.CallbackContext context)

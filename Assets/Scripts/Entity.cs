@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,10 +17,12 @@ public class Entity : MonoBehaviour
     }
     
     [SerializeField] private Weapon weapon;
-
+	[SerializeField] protected Rigidbody rb;
+	
     private void Start()
     {
-	    weapon = GetComponentInChildren<Weapon>();
+	    rb = GetComponent<Rigidbody>();
+		weapon = GetComponentInChildren<Weapon>();
     }
 
 	public virtual void Move(Vector2 vector2)
@@ -38,8 +39,6 @@ public class Entity : MonoBehaviour
     {
 	    if (!weapon)
 		    return;
-	    
-	    Debug.Log($"entity {name} fired");
 		weapon.Fire();
     }
 
