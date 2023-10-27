@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviour
 {
-    public float damage;
+    [SerializeField] protected List<GameObject> projectiles;
 
-    public void Fire()
-    {
-
-    }
+    public abstract void Fire();
 }
