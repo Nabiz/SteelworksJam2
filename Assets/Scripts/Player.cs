@@ -4,19 +4,44 @@ using UnityEngine;
 
 public class Player : Entity
 {
-	[SerializeField] private Rigidbody rb;
 	private bool isControlled;
 	public SpriteAnimator playerAnimator;
 
-	public override void Move(Vector2 vector2)
+	private void Start()
 	{
-		rb.MovePosition(transform.position + new Vector3(vector2.x, 0f, vector2.y));
+		isControlled = true;
 	}
 
-	public override void Rotate(Vector2 vector2)
+	public override void Move(Vector2 move)
+	{
+		rb.MovePosition(transform.position + new Vector3(move.x, 0f, move.y));
+	}
+
+	public override void Rotate(Vector2 rot)
 	{
 		//rb.MoveRotation(Quaternion.Euler(vector2));
-
+		if (rot.x > rot.y)
+		{
+			if (rot.x > 0)
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.right);
+			}
+			else
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.left);
+			}
+		}
+		else
+		{
+			if (rot.y > 0)
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.up);
+			}
+			else
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.down);
+			}
+		}
 	}
 
 	public bool IsControlled()
