@@ -23,4 +23,12 @@ public class Player : Entity
 	{
 		return isControlled;
 	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.CompareTag("Enemy"))
+		{
+			HP -= other.gameObject.GetComponent<Enemy>().contactDamage;
+		}
+	}
 }

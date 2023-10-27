@@ -33,9 +33,6 @@ public class InputManager : MonoBehaviour
 
     public void Rotate(InputAction.CallbackContext context)
     {
-        if (context.canceled)
-            speed = Vector2.zero;
-        
         if (!context.performed)
             return;
         

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Enemy : Entity
 {
+	public float contactDamage;
+	
 	private void Awake()
 	{
 		StartCoroutine(AI());
