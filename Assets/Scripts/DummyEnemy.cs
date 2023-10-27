@@ -2,14 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DummyEnemy : Entity
+public class DummyEnemy : Enemy
 {
-	private void Awake()
-	{
-		StartCoroutine(AI());
-	}
 
-	IEnumerator AI()
+	protected override IEnumerator AI()
 	{
 		while (true)
 		{
@@ -17,5 +13,4 @@ public class DummyEnemy : Entity
 			yield return new WaitForSeconds(1f);
 		}
 	}
-
 }
