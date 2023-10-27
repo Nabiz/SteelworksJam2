@@ -19,7 +19,7 @@ public class Entity : MonoBehaviour
     
     [SerializeField] private Weapon weapon;
 
-    private void Awake()
+    private void Start()
     {
 	    weapon = GetComponentInChildren<Weapon>();
     }
@@ -28,6 +28,8 @@ public class Entity : MonoBehaviour
     {
 	    if (!weapon)
 		    return;
+	    
+	    Debug.Log($"entity {name} fired");
 		weapon.Fire();
     }
 

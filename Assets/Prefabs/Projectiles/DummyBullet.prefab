@@ -50,5 +50,5 @@ MonoBehaviour:
   destroyOnCollide: 1
   pierceCooldown: 0
   pierceLifetime: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1e7b768ac48768042a0f432615b3987d, type: 3}
   currentPierceLifetime: 0
