@@ -33,13 +33,12 @@ public class InputManager : MonoBehaviour
 
     public void Rotate(InputAction.CallbackContext context)
     {
-        if (context.canceled)
-            speed = Vector2.zero;
         
         if (!context.performed)
             return;
         
         rotation = context.ReadValue<Vector2>();
+        Debug.Log(rotation);
     }
     
     public void Fire(InputAction.CallbackContext context)

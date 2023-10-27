@@ -19,6 +19,8 @@ public class Player : Entity
 
 	public override void Rotate(Vector2 rot)
 	{
+		//get mouse pos vs player pos:
+		Debug.Log(rot);
 		//rb.MoveRotation(Quaternion.Euler(vector2));
 		if (rot.x > rot.y)
 		{
