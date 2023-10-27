@@ -19,7 +19,7 @@ public class Entity : MonoBehaviour
     [SerializeField] private Weapon weapon;
 	[SerializeField] protected Rigidbody rb;
 	
-    private void Start()
+    private void Awake()
     {
 	    rb = GetComponent<Rigidbody>();
 		weapon = GetComponentInChildren<Weapon>();
