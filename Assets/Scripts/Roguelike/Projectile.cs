@@ -11,6 +11,7 @@ public class Projectile : MonoBehaviour
     public bool destroyOnCollide;
     public float pierceCooldown;
     public int pierceLifetime;
+    public Sprite sprite;
     
     [SerializeField] private float currentPierceLifetime;
 
@@ -28,7 +29,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay2D(Collision2D other)
+    private void OnCollisionStay(Collision other)
     {
         if (other.gameObject.CompareTag("Entity"))
         {

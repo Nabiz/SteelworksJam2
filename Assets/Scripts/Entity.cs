@@ -17,15 +17,32 @@ public class Entity : MonoBehaviour
     }
     
     [SerializeField] private Weapon weapon;
+	[SerializeField] protected Rigidbody rb;
+	
+    private void Awake()
+    {
+	    rb = GetComponent<Rigidbody>();
+		weapon = GetComponentInChildren<Weapon>();
+    }
 
-    public virtual void Fire()
+	public virtual void Move(Vector2 vector2)
+	{
+		
+	}
+
+	public virtual void Rotate(Vector2 vector2)
+	{
+		
+	}
+
+	public virtual void Fire()
     {
 	    if (!weapon)
 		    return;
 		weapon.Fire();
     }
 
-    public virtual void Die()
+	public virtual void Die()
     {
 		Destroy(gameObject);
     }
