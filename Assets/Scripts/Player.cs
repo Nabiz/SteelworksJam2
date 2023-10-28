@@ -10,7 +10,7 @@ public class Player : Entity
 	[SerializeField] protected float normalSpeed;
 	[SerializeField] protected float takeoverSpeed;
 
-	private void Start()
+	public virtual void Start()
 	{
 		isControlled = true;
 		currentSpeed = normalSpeed;

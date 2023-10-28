@@ -1,13 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerRealWorld : Player
 {
     private NPC takenOverNPC;
     [SerializeField] private float propsDetectionRadius = 5f;
+[SerializeField] private Prop[] props;
     
+    public override void Start ()
+    {
+        base.Start();
+        props = FindObjectsOfType<Prop>();
+    }
+
     private void Update()
     {
         if (!takenOverNPC)
@@ -58,16 +66,20 @@ public class PlayerRealWorld : Player
 
     public List<Prop> GetNearestProps()
     {
+        Debug.Log("search for nearest props");
         List<Prop> nearestProps = new List<Prop>();
-        Collider[] colliders = Physics.OverlapSphere(transform.position, propsDetectionRadius);
 
-        foreach (Collider c in colliders)
+        foreach (Prop prop in props)
         {
-            Prop prop = c.GetComponent<Prop>();
-            if (prop)
+            if (Vector3.Distance(transform.position, prop.transform.position) < propsDetectionRadius)
                 nearestProps.Add(prop);
         }
 
+        Debug.Log($"{nearestProps.Count}");
         return nearestProps;
+    }
+
+    void OnDrawGizmos () {
+        Gizmos.DrawWireSphere(transform.position, propsDetectionRadius);
     }
 }
