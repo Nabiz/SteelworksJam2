@@ -8,8 +8,6 @@ public class HotDog : Enemy
 	[SerializeField] private Animator animator;
 	[SerializeField] private float minJumpCooldown;
 	[SerializeField] private float maxJumpCooldown;
-	[SerializeField] private float minShootCooldown;
-	[SerializeField] private float maxShootCooldown;
 	[SerializeField] private float jumpForce;
 	[SerializeField] private float jumpForceUp;
 	[SerializeField] private float scatterDistance;
@@ -37,6 +35,7 @@ public class HotDog : Enemy
 	
 	protected override IEnumerator AI()
 	{
+		StartCoroutine(MeleeAttack());
 		while (true)
 		{
 			yield return new WaitForSeconds(UnityEngine.Random.Range(minJumpCooldown, maxJumpCooldown));
@@ -51,9 +50,22 @@ public class HotDog : Enemy
 			{
 				Debug.Log("Jump Away");
 				JumpBack();
-			} 
+			}
 			
-			yield return new WaitForSeconds(UnityEngine.Random.Range(minShootCooldown, maxShootCooldown));
+			yield return new WaitForSeconds(Random.Range(1f, 4f));
+		}
+	}
+	
+	IEnumerator MeleeAttack()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(Random.Range(1f, 2f));
+			if (GameManager.Instance.DistanceToPlayer(transform.position) < 2f)
+			{
+				facingDir = GameManager.Instance.GetPlayer().transform.position - transform.position;
+				weapon.Fire();
+			}
 		}
 	}
 
@@ -103,7 +115,7 @@ public class HotDog : Enemy
 		rb.AddForce(direction + new Vector3(Random.Range(0, .2f), Random.Range(0, .2f), Random.Range(0, .2f)), ForceMode.Impulse);
 	}
 
-	public Vector3 Lerp(float t) {
+	Vector3 Lerp(float t) {
         Vector3 pointAB = Vector3.Lerp(jumpStartPos, jumpAnchor, t);
         Vector3 pointBC = Vector3.Lerp(jumpAnchor, jumpEndPos, t);
         return Vector3.Lerp(pointAB, pointBC, t);

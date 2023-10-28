@@ -52,7 +52,6 @@ public class InputManager : MonoBehaviour
     {
         if (context.performed && GameManager.Instance.gameState == Enums.GameState.roguelike)
         {
-            Debug.Log("charging fire");
             charged = true;
             //GameManager.Instance.GetPlayer().weapon.Charge();
         }
@@ -61,10 +60,8 @@ public class InputManager : MonoBehaviour
             switch (GameManager.Instance.gameState)
             {
                 case Enums.GameState.realWorld:
-                    Debug.Log("can't release charge in real world");
                     break;
                 case Enums.GameState.roguelike:
-                    Debug.Log("release charge");
                     GameManager.Instance.GetPlayer().weapon.ReleaseCharge();
                     charged = false;
                     break;
@@ -77,11 +74,9 @@ public class InputManager : MonoBehaviour
             switch (GameManager.Instance.gameState)
             {
                 case Enums.GameState.realWorld:
-                    Debug.Log("real world takeover");
                     ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
                     break;
                 case Enums.GameState.roguelike:
-                    Debug.Log("fire");
                     GameManager.Instance.GetPlayer().Fire();
                     break;
                 default:

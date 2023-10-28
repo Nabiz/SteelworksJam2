@@ -29,9 +29,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="216.19266"
-     inkscape:cy="77.14821"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="512.93518"
+     inkscape:cy="154.37147"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -67,73 +67,107 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     style="display:inline">
     <rect
-       style="fill:#800080;stroke:none;stroke-width:0.257001;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#800080;stroke:none;stroke-width:0.514002;stroke-linecap:round;stroke-linejoin:round;opacity:0"
        id="rect835"
-       width="33.867001"
-       height="33.866665"
+       width="67.734001"
+       height="67.73333"
        x="0"
-       y="0" />
+       y="0"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path117"
-       style="fill:#800000;stroke:#000000;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 20.254324,26.987509 c 0,1.83404 -1.486784,3.320824 -3.320824,3.320824 -1.83404,0 -3.320824,-1.486784 -3.320824,-3.320824 0,-1.83404 1.486784,-0.674991 3.320824,-0.674991 1.83404,0 3.320824,-1.159049 3.320824,0.674991 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#800000;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 40.50865,53.975021 c 0,3.66808 -2.973568,6.641648 -6.641648,6.641648 -3.66808,0 -6.641649,-2.973568 -6.641649,-6.641648 0,-3.66808 2.973569,-1.349982 6.641649,-1.349982 3.66808,0 6.641648,-2.318098 6.641648,1.349982 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#800000;stroke:#000000;stroke-width:0.13229167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#800000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path120"
-       cx="16.942932"
-       cy="26.414581"
-       rx="3.1217568"
-       ry="1.9293519" />
+       cx="33.885864"
+       cy="52.829166"
+       rx="6.2435141"
+       ry="3.8587041"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="ellipse126"
-       style="fill:#552200;stroke:none;stroke-width:0.417424;stroke-linecap:round;stroke-linejoin:round"
-       d="m 19.936388,26.991209 c 0,0.873465 -1.228617,1.2914 -2.923491,1.2914 -1.694873,0 -2.93964,-0.337338 -2.939639,-1.210803 0,-0.873465 1.244766,-1.952292 2.939639,-1.952292 1.694873,0 2.92349,0.99823 2.923491,1.871695 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#552200;stroke:none;stroke-width:0.834848;stroke-linecap:round;stroke-linejoin:round"
+       d="m 39.872778,53.982421 c 0,1.74693 -2.457234,2.5828 -5.846982,2.5828 -3.389746,0 -5.879281,-0.674676 -5.879279,-2.421606 0,-1.74693 2.489533,-3.904584 5.879279,-3.904584 3.389746,0 5.84698,1.99646 5.846982,3.74339 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse128"
-       cx="16.942932"
-       cy="26.414581"
-       rx="3.1856706"
-       ry="1.9271199" />
+       cx="33.885864"
+       cy="52.829166"
+       rx="6.3713417"
+       ry="3.8542399"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect131"
-       style="fill:#803300;stroke:#000000;stroke-width:0.26458333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 16.106678,18.785417 h 1.653645 v 8.268229 c -0.551215,0.695301 -1.10243,0.534987 -1.653645,0 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 32.213358,37.570836 h 3.30729 v 16.536459 c -1.10243,1.390602 -2.20486,1.069974 -3.30729,0 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect957"
-       style="fill:#008000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 17.063679,15.382939 4.266406,7.34323 c -2.931056,0.852763 -5.862112,0.732841 -8.793168,0 z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 34.12736,30.76588 8.532812,14.68646 c -5.862112,1.705526 -11.724224,1.465682 -17.586337,0 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path980"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 23.799758,13.011079 H 19.96444 V 11.09342 h 3.835318 c 2.669738,-4.9121394 1.118027,-1.046345 0,1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 47.599519,26.022159 h -7.670637 v -3.835318 h 7.670637 c 5.339476,-9.824279 2.236054,-2.09269 0,3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect964"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 10.500352,11.178548 h 3.835318 v 1.917659 h -3.835318 c -2.6697376,4.912139 -1.1180266,1.046345 0,-1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 21.000705,22.357097 h 7.670637 v 3.835318 h -7.670637 c -5.339475,9.824279 -2.236053,2.09269 0,-3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect962"
-       style="fill:#008000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 12.997823,8.4335938 h 7.871354 c -0.448813,2.7791432 -1.687621,5.8317462 0,7.8713542 h -7.871354 c 2.012163,-2.169425 0.535123,-5.126735 0,-7.8713542 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 25.995647,16.867188 h 15.742709 c -0.897626,5.558287 -3.375242,11.663493 0,15.74271 H 25.995647 c 4.024327,-4.338851 1.070246,-10.253471 0,-15.74271 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1003"
-       transform="matrix(-0.78143374,-0.62398823,-0.62398823,0.78143374,44.317,12.52054)">
+       transform="matrix(-1.5628676,-1.2479765,-1.2479765,1.5628676,88.634005,25.041081)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path999"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -147,7 +181,10 @@
     </g>
     <g
        id="g991"
-       transform="rotate(-38.607965,12.708602,21.216878)">
+       transform="matrix(1.5628676,-1.2479765,1.2479765,1.5628676,-20.922822,25.134625)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="rect982"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -161,27 +198,38 @@
     </g>
     <path
        id="rect966"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 47.730469,15.203125 c -9.371038,-11.4488146 -7.558602,-7.0543734 0,5.480469 l 1.76509,-0.397748 1.902266,-1.767767 2.519891,1.889249 3.71119,0.276266 v 16.214844 c 4.360677,3.667921 8.721355,3.497916 13.082032,0 V 20.683594 h 2.976563 l 2.030869,2.607456 0.591725,-4.434001 4.29928,1.826545 c 10.050744,-19.1556926 2.693217,-8.297123 0,-5.480469 l -3.299441,0.551166 -0.01613,-3.505853 -4.326791,3.52254 -2.304795,-3.390422 -1.849399,4.042458 -17.098324,-1.341208 0.473001,-4.441181 z"
-       transform="scale(0.26458333)"
-       sodipodi:nodetypes="cccccccccccccccccccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 25.257374,8.0449873 c -4.958841,-6.0583313 -3.99976,-3.7329394 0,2.9000817 l 0.934027,-0.210475 1.006616,-0.9354435 1.333442,0.9997275 1.963838,0.146191 v 8.580355 c 2.307525,1.940942 4.615051,1.850981 6.922576,0 v -8.580355 h 1.575098 l 1.074668,1.379779 0.313121,-2.3463258 2.275036,0.9665468 c 5.318519,-10.13655448 1.425161,-4.3905612 0,-2.9000817 L 40.909842,8.336646 40.901342,6.4814654 38.611749,8.3454762 37.392128,6.5513778 36.413488,8.6905119 27.365624,7.9807893 27.61592,5.6306643 Z"
+       sodipodi:nodetypes="cccccccccccccccccccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path973"
-       cx="16.229942"
-       cy="7.1795273"
-       rx="0.44433558"
-       ry="0.88867116" />
+       cx="32.459885"
+       cy="14.359056"
+       rx="0.88867122"
+       ry="1.7773424"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.322219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.644438;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse975"
-       cx="17.609722"
-       cy="7.1444483"
-       rx="0.41551742"
-       ry="1.409426" />
+       cx="35.219444"
+       cy="14.288898"
+       rx="0.8310349"
+       ry="2.8188522"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1009"
-       transform="matrix(-0.89449714,-0.44707367,-0.44707367,0.89449714,44.787201,13.65038)">
+       transform="matrix(-1.7889944,-0.89414739,-0.89414739,1.7889944,89.574407,27.300761)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1005"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -195,7 +243,10 @@
     </g>
     <g
        id="g1015"
-       transform="matrix(-0.9958876,-0.09059743,-0.09059743,0.9958876,42.498071,2.8771079)">
+       transform="matrix(-1.9917753,-0.18119487,-0.18119487,1.9917753,84.996146,5.7542161)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1011"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -209,7 +260,10 @@
     </g>
     <g
        id="g1027"
-       transform="rotate(-1.5725242,27.687493,219.41804)">
+       transform="matrix(1.9992469,-0.05488456,0.05488456,1.9992469,-12.021808,1.6848861)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1023"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -223,7 +277,10 @@
     </g>
     <g
        id="g1021"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,40.575073,-4.7368442)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,81.15015,-9.4736889)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1017"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -237,7 +294,10 @@
     </g>
     <g
        id="g1033"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,39.21868,-4.5497555)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,78.437364,-9.0995115)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1029"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -251,63 +311,96 @@
     </g>
     <path
        id="path1049"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.18282708;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 17.227348,9.5054177 V 10.923886 L 17.819003,9.5054177 Z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.365654;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 34.454698,19.010836 v 2.836937 l 1.18331,-2.836937 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1051"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.18282708;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 16.661448,9.5219542 V 10.940423 L 16.069793,9.5219542 Z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.365654;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 33.322898,19.043909 v 2.836938 l -1.18331,-2.836938 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_forward_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
-       style="fill:#800080;stroke:none;stroke-width:0.257001;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#800080;stroke:none;stroke-width:0.514002;stroke-linecap:round;stroke-linejoin:round;opacity:0"
        id="rect1053"
-       width="33.867001"
-       height="33.866665"
-       x="33.867001"
-       y="0.06614583" />
+       width="67.734001"
+       height="67.73333"
+       x="67.734001"
+       y="0.13229166"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1055"
-       style="fill:#800000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 54.121323,27.053654 c 0,1.83404 -1.486784,3.320824 -3.320825,3.320824 -1.83404,0 -3.320824,-1.486784 -3.320824,-3.320824 0,-1.83404 1.486784,-0.674991 3.320824,-0.674991 1.834041,0 3.320825,-1.159049 3.320825,0.674991 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#800000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 108.24265,54.107311 c 0,3.66808 -2.97357,6.641648 -6.64165,6.641648 -3.668079,0 -6.641647,-2.973568 -6.641647,-6.641648 0,-3.66808 2.973568,-1.349982 6.641647,-1.349982 3.66808,0 6.64165,-2.318098 6.64165,1.349982 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#800000;stroke:#000000;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#800000;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse1057"
-       cx="50.809933"
-       cy="26.480726"
-       rx="3.1217568"
-       ry="1.9293519" />
+       cx="101.61987"
+       cy="52.961456"
+       rx="6.2435141"
+       ry="3.8587041"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1059"
-       style="fill:#552200;stroke:none;stroke-width:0.417424;stroke-linecap:round;stroke-linejoin:round"
-       d="m 53.803386,27.057355 c 0,0.873465 -1.228617,1.2914 -2.92349,1.2914 -1.694874,0 -2.93964,-0.337338 -2.939639,-1.210803 0,-0.873465 1.244765,-1.952292 2.939639,-1.952292 1.694873,0 2.92349,0.99823 2.92349,1.871695 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#552200;stroke:none;stroke-width:0.834848;stroke-linecap:round;stroke-linejoin:round"
+       d="m 107.60678,54.114713 c 0,1.74693 -2.45724,2.5828 -5.84698,2.5828 -3.389751,0 -5.879283,-0.674676 -5.879281,-2.421606 0,-1.74693 2.48953,-3.904584 5.879281,-3.904584 3.38974,0 5.84698,1.99646 5.84698,3.74339 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse1061"
-       cx="50.809933"
-       cy="26.480726"
-       rx="3.1856706"
-       ry="1.9271199" />
+       cx="101.61987"
+       cy="52.961456"
+       rx="6.3713417"
+       ry="3.8542399"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1063"
-       style="fill:#803300;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 49.973676,18.851562 h 1.653645 v 8.268229 c -0.551215,0.695302 -1.10243,0.534988 -1.653645,0 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 99.947357,37.703126 h 3.307293 v 16.536459 c -1.10243,1.390604 -2.20486,1.069976 -3.307293,0 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1065"
-       style="fill:#008000;stroke:#000000;stroke-width:0.227099;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 50.82576,15.430344 3.127215,7.380711 c -2.148422,0.699842 -4.296845,0.79812 -6.445267,0 z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.454198;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 101.65153,30.86069 6.25443,14.761422 c -4.29685,1.399684 -8.593695,1.59624 -12.890539,0 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1067"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 54.860427,11.899504 h -3.835318 v 1.917659 h 3.835318 c 2.669739,4.91214 1.118026,1.046345 0,-1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 109.72086,23.799009 h -7.67064 v 3.835318 h 7.67064 c 5.33948,9.824281 2.23605,2.092691 0,-3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1201"
-       transform="rotate(-7.5939538,-11.154372,-182.24423)">
+       transform="matrix(1.9824591,-0.26430359,0.26430359,1.9824591,47.972146,-6.14489)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1197"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -321,12 +414,18 @@
     </g>
     <path
        id="path1071"
-       style="fill:#008000;stroke:#000000;stroke-width:0.219581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 49.678971,8.5764578 2.645607,-0.066146 c -0.307368,2.795033 -0.03128,5.832014 1.124479,7.883282 h -5.390658 c 1.37802,-2.181828 1.987049,-5.056825 1.620572,-7.8171362 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.439162;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 99.357947,17.152917 5.291213,-0.132293 c -0.61473,5.590067 -0.0626,11.664029 2.24896,15.766565 H 96.116803 c 2.75604,-4.363656 3.974097,-10.11365 3.241144,-15.634272 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1225"
-       transform="matrix(-0.99122949,-0.13215179,-0.13215179,0.99122949,78.0194,-3.1716636)">
+       transform="matrix(-1.9824591,-0.26430359,-0.26430359,1.9824591,156.03881,-6.3433275)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1221"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -340,12 +439,18 @@
     </g>
     <path
        id="path1069"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 47.126908,13.872351 h 3.835318 v -1.917659 h -3.835318 c -2.669737,-4.9121375 -1.118026,-1.046345 0,1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 94.253821,27.744703 h 7.670639 v -3.835318 h -7.670639 c -5.339474,-9.824275 -2.236052,-2.09269 0,3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1101"
-       transform="matrix(-0.9958876,-0.09059743,-0.09059743,0.9958876,76.365069,2.9432537)">
+       transform="matrix(-1.9917753,-0.18119487,-0.18119487,1.9917753,152.73015,5.8865077)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1097"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -359,7 +464,10 @@
     </g>
     <g
        id="g1113"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,74.442072,-4.6706984)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,148.88415,-9.3413973)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1109"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -373,7 +481,10 @@
     </g>
     <g
        id="g1119"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,73.08568,-4.4836097)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,146.17137,-8.9672199)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1115"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -386,64 +497,97 @@
          sodipodi:nodetypes="cc" />
     </g>
     <rect
-       style="fill:#800080;stroke:none;stroke-width:0.257001;stroke-linecap:round;stroke-linejoin:round"
+       style="fill:#800080;stroke:none;stroke-width:0.514002;stroke-linecap:round;stroke-linejoin:round;opacity:0"
        id="rect1125"
-       width="33.867001"
-       height="33.866665"
-       x="67.734001"
-       y="0.06614583" />
+       width="67.734001"
+       height="67.73333"
+       x="135.468"
+       y="0.13229166"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1127"
-       style="fill:#800000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 87.988324,27.053654 c 0,1.83404 -1.486784,3.320824 -3.320825,3.320824 -1.83404,0 -3.320824,-1.486784 -3.320824,-3.320824 0,-1.83404 1.486784,-0.674991 3.320824,-0.674991 1.834041,0 3.320825,-1.159049 3.320825,0.674991 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#800000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 175.97666,54.107311 c 0,3.66808 -2.97357,6.641648 -6.64165,6.641648 -3.66808,0 -6.64165,-2.973568 -6.64165,-6.641648 0,-3.66808 2.97357,-1.349982 6.64165,-1.349982 3.66808,0 6.64165,-2.318098 6.64165,1.349982 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#800000;stroke:#000000;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#800000;stroke:#000000;stroke-width:0.264584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse1129"
-       cx="84.676933"
-       cy="26.480726"
-       rx="3.1217568"
-       ry="1.9293519" />
+       cx="169.35388"
+       cy="52.961456"
+       rx="6.2435141"
+       ry="3.8587041"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1131"
-       style="fill:#552200;stroke:none;stroke-width:0.417424;stroke-linecap:round;stroke-linejoin:round"
-       d="m 87.670387,27.057355 c 0,0.873465 -1.228617,1.2914 -2.92349,1.2914 -1.694874,0 -2.93964,-0.337338 -2.939639,-1.210803 0,-0.873465 1.244765,-1.952292 2.939639,-1.952292 1.694873,0 2.92349,0.99823 2.92349,1.871695 z"
-       sodipodi:nodetypes="sssss" />
+       style="fill:#552200;stroke:none;stroke-width:0.834848;stroke-linecap:round;stroke-linejoin:round"
+       d="m 175.34078,54.114713 c 0,1.74693 -2.45723,2.5828 -5.84698,2.5828 -3.38975,0 -5.87928,-0.674676 -5.87928,-2.421606 0,-1.74693 2.48953,-3.904584 5.87928,-3.904584 3.38975,0 5.84698,1.99646 5.84698,3.74339 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="ellipse1133"
-       cx="84.676933"
-       cy="26.480726"
-       rx="3.1856706"
-       ry="1.9271199" />
+       cx="169.35388"
+       cy="52.961456"
+       rx="6.3713417"
+       ry="3.8542399"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1135"
-       style="fill:#803300;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 83.840677,18.851562 h 1.653645 v 8.268229 c -0.551215,0.695302 -1.10243,0.534988 -1.653645,0 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 167.68136,37.703126 h 3.30729 v 16.536459 c -1.10243,1.390604 -2.20486,1.069976 -3.30729,0 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1137"
-       style="fill:#008000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 84.797678,15.449085 4.266406,7.343229 c -2.881716,0.986789 -5.823535,0.771517 -8.793167,0 z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 169.59536,30.898172 8.53282,14.686458 c -5.76343,1.973578 -11.64707,1.543034 -17.58634,0 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1139"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 78.234352,13.077225 h 3.835318 v -1.917659 h -3.835318 c -2.669739,-4.9121396 -1.118026,-1.046345 0,1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 156.46871,26.154451 h 7.67064 v -3.835318 h -7.67064 c -5.33948,-9.82428 -2.23605,-2.09269 0,3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1141"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 91.533759,11.244694 h -3.835318 v 1.917659 h 3.835318 c 2.669737,4.912138 1.118026,1.046345 0,-1.917659 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 183.06753,22.489389 h -7.67064 v 3.835318 h 7.67064 c 5.33947,9.824277 2.23605,2.09269 0,-3.835318 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="path1143"
-       style="fill:#008000;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 80.731823,8.4997396 h 7.871355 c -0.448814,2.7791434 -1.687621,5.8317464 0,7.8713534 h -7.871354 c 2.012163,-2.169424 0.535123,-5.126734 -10e-7,-7.8713534 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#008000;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 161.46365,16.99948 h 15.74272 c -0.89763,5.558287 -3.37525,11.663494 0,15.742708 h -15.74271 c 4.02432,-4.338849 1.07024,-10.253469 -1e-5,-15.742708 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1149"
-       transform="matrix(-0.78143374,-0.62398823,-0.62398823,0.78143374,112.051,12.586686)">
+       transform="matrix(-1.5628676,-1.2479765,-1.2479765,1.5628676,224.10201,25.173373)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1145"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -457,7 +601,10 @@
     </g>
     <g
        id="g1155"
-       transform="rotate(-38.607965,46.670022,-75.437476)">
+       transform="matrix(1.5628676,-1.2479765,1.2479765,1.5628676,114.54519,25.266916)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1151"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -471,12 +618,18 @@
     </g>
     <path
        id="path1157"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       d="m 80.362686,4.0886392 c -2.479421,-3.0291654 -1.99988,-1.8664696 0,1.4500408 l 0.467013,-0.1052375 0.503308,-0.4677217 0.666721,0.4998638 0.981919,0.073095 V 9.828857 c 1.153763,0.970471 2.307525,0.925491 3.461288,0 V 5.53868 h 0.787549 l 0.537334,0.6898894 0.15656,-1.1731628 1.137518,0.4832734 c 2.659261,-5.06827693 0.712581,-2.1952805 0,-1.4500408 l -0.872977,0.1458294 -0.0043,-0.9275903 -1.144796,0.9320054 -0.609811,-0.8970492 -0.48932,1.069567 -4.52393,-0.3548612 0.125149,-1.1750625 z"
-       sodipodi:nodetypes="cccccccccccccccccccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 160.72538,8.1772788 c -4.95884,-6.0583311 -3.99976,-3.7329394 0,2.9000822 l 0.93403,-0.210475 1.00661,-0.9354439 1.33344,0.9997279 1.96384,0.14619 v 8.580355 c 2.30753,1.940942 4.61505,1.850982 6.92258,0 v -8.580354 h 1.5751 l 1.07467,1.379778 0.31312,-2.346325 2.27503,0.966547 c 5.31852,-10.13655481 1.42516,-4.3905616 0,-2.9000822 l -1.74595,0.2916588 -0.009,-1.8551807 -2.28959,1.8640109 -1.21963,-1.7940984 -0.97864,2.1391341 -9.04786,-0.7097225 0.2503,-2.3501251 z"
+       sodipodi:nodetypes="cccccccccccccccccccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g1167"
-       transform="matrix(-0.89449714,-0.44707367,-0.44707367,0.89449714,112.5212,13.716525)">
+       transform="matrix(-1.7889944,-0.89414739,-0.89414739,1.7889944,225.04241,27.433051)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1163"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -490,7 +643,10 @@
     </g>
     <g
        id="g1173"
-       transform="matrix(-0.9958876,-0.09059743,-0.09059743,0.9958876,110.23207,2.9432537)">
+       transform="matrix(-1.9917753,-0.18119487,-0.18119487,1.9917753,220.46415,5.8865077)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1169"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -504,7 +660,10 @@
     </g>
     <g
        id="g1179"
-       transform="rotate(-1.5725242,63.964401,-2248.3193)">
+       transform="matrix(1.9992469,-0.05488456,0.05488456,1.9992469,123.4462,1.8171778)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1175"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -518,7 +677,10 @@
     </g>
     <g
        id="g1185"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,108.30907,-4.6706984)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,216.61815,-9.3413973)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1181"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -532,7 +694,10 @@
     </g>
     <g
        id="g1191"
-       transform="matrix(-0.98031432,0.19744325,0.19744325,0.98031432,106.95268,-4.4836097)">
+       transform="matrix(-1.9606287,0.39488652,0.39488652,1.9606287,213.90537,-8.9672199)"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_back_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <path
          id="path1187"
          style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
@@ -546,26 +711,37 @@
     </g>
     <path
        id="rect1203"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 49.812359,4.3498116 h 2.291836 c 0.271585,1.574663 0.343975,3.149326 0,4.723989 h -2.291836 c -0.239538,-1.494817 -0.153224,-3.0982514 0,-4.723989 z"
-       sodipodi:nodetypes="ccccc" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 99.624723,8.6996237 h 4.583677 c 0.54317,3.1493263 0.68795,6.2986523 0,9.4479783 h -4.583677 c -0.479076,-2.989634 -0.306448,-6.196503 0,-9.4479783 z"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <ellipse
-       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1205"
-       cx="50.116375"
-       cy="6.1973119"
-       rx="0.30401909"
-       ry="1.3330069" />
+       cx="100.23276"
+       cy="12.394625"
+       rx="0.60803825"
+       ry="2.666014"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect1207"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 49.674876,8.1657554 h 0.795127 l -0.795127,1.6370258 z"
-       sodipodi:nodetypes="cccc" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.529166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 99.349757,16.331512 h 1.590253 l -1.590253,3.274051 z"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        id="rect1210"
-       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.920271;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 193.53711 4.7792969 L 192.93164 8.6308594 L 190.05469 5.9257812 L 188.29883 7.7929688 L 192.22461 11.486328 L 192.53516 11.15625 L 191.53711 17.511719 L 196.25977 19.103516 L 196.80273 15.644531 L 202.05664 15.644531 L 202.05664 12.638672 L 197.27539 12.638672 L 198.25977 6.3730469 L 193.53711 4.7792969 z "
-       transform="scale(0.26458333)" />
+       style="fill:#803300;fill-opacity:1;stroke:#000000;stroke-width:0.486977;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 102.41339,2.5290447 -0.32039,2.0381186 -1.52239,-1.4314373 -0.929142,0.9880535 2.077392,1.9544026 0.16433,-0.1746662 -0.52813,3.3631024 2.49907,0.8423257 0.28732,-1.8303793 h 2.78019 V 6.6879642 h -2.53008 l 0.52091,-3.3155601 z"
+       inkscape:export-filename="E:\STEELJAM\SteelworksJam2\Assets\Sprites\Enemies\leszy_left_sprite.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"

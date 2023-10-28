@@ -48,4 +48,6 @@ MonoBehaviour:
   unitLenght: 1
   roomPrefabs:
   - {fileID: 3894116656040041391, guid: e500ae01946e10c4989f2f3470b5d645, type: 3}
+  - {fileID: 3894116656040041391, guid: 975977f25782ea64cafe8ad3c2b37542, type: 3}
   possibleRoomPosition: []
+  currentRoom: {fileID: 0}

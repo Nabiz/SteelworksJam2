@@ -15,7 +15,6 @@ public class Room : MonoBehaviour
 
     public void SpawnEnemies(List<GameObject> enemiesInRoom)
     {
-        Debug.Log($"spawn {enemiesInRoom.Count} enemies");
         foreach (SpawnPoint spawnPoint in spawnPoints)
         {
             if (enemiesInRoom.Count == 0)

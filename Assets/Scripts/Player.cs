@@ -19,10 +19,35 @@ public class Player : Entity
 	public override void Move(Vector2 move)
 	{
 		rb.AddForce(new Vector3(move.x, 0, move.y) * currentSpeed, ForceMode.Force);
+
+
+		if (Mathf.Abs(move.x) > Mathf.Abs(move.y))
+		{
+			if (move.x > 0)
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.right);
+			}
+			else
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.left);
+			}
+		}
+		else
+		{
+			if (move.y > 0)
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.up);
+			}
+			else
+			{
+				playerAnimator.SetDirectionAll(Enums.Direction.down);
+			}
+		}
 	}
 
 	public override void Rotate(Vector2 rot)
 	{
+		/*
 		if (Mathf.Abs(rot.x) > Mathf.Abs(rot.y))
 		{
 			if (rot.x > 0)
@@ -45,6 +70,7 @@ public class Player : Entity
 				playerAnimator.SetDirectionAll(Enums.Direction.down);
 			}
 		}
+		*/
 	}
 
 	public bool IsControlled()

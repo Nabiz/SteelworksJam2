@@ -40,8 +40,7 @@ public class RoomGenerator : MonoBehaviour
 
         GenerateRoom(roomPrefabs[0], Vector3.zero);
         currentRoom = roomList[0].GetComponent<Room>();
-
-        Debug.Log($"catched {propsList.Count} prompts");
+        
         List<GameObject> enemiesPrefabs = new List<GameObject>();
         foreach (Prop prop in SelectRandomProps(propsList))
         {
@@ -122,7 +121,6 @@ public class RoomGenerator : MonoBehaviour
 
             if((System.Math.Abs(cameraPosX-roomPosX) < 0.1f) && (System.Math.Abs(cameraPosZ - roomPosZ) < 0.1f))
             {
-                Debug.Log("GITUWA");
                 currentRoom = room.GetComponent<Room>();
             }
         }
