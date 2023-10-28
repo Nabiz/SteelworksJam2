@@ -10,12 +10,28 @@ public class Door : MonoBehaviour
     private RoomGenerator roomGenerator;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player")
+        if (other.gameObject.GetComponent<Player>() != null)
         {
             other.gameObject.transform.position += playerOffset;
             Camera.main.transform.position += cameraOffset;
             roomGenerator.UpdateCurrentRoom();
             //if (other.GetComponent<Player>().weapon
+            if (playerOffset.z > 0.1f)
+            {
+                roomGenerator.currentRoom.doorDown.SetActive(true);
+            }
+            else if (playerOffset.z < -0.1f)
+            {
+                roomGenerator.currentRoom.doorUp.SetActive(true);
+            }
+            else if (playerOffset.x > 0.1f)
+            {
+                roomGenerator.currentRoom.doorLeft.SetActive(true);
+            }
+            else if(playerOffset.x < -0.1f)
+            {
+                roomGenerator.currentRoom.doorRight.SetActive(true);
+            }
         }
     }
 

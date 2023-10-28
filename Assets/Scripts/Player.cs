@@ -57,7 +57,7 @@ public class Player : Entity
 		weapon.Fire();
 	}
 
-	private void OnCollisionEnter(Collision other)
+	protected virtual void OnCollisionEnter(Collision other)
 	{
 		if (other.gameObject.CompareTag("Enemy"))
 		{
