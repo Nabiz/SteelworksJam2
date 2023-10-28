@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class DummyPistol : Weapon
 {
-	public override void OnTargetHit(Entity target, Projectile source) { }
+	public override void OnTargetHit(Entity target, Projectile source, out bool hit) 
+	{
+		base.OnTargetHit(target, source, out hit);
+	}
 
 	public override void Fire()
 	{

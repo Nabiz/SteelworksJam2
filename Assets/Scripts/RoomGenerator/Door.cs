@@ -15,6 +15,7 @@ public class Door : MonoBehaviour
             other.gameObject.transform.position += playerOffset;
             Camera.main.transform.position += cameraOffset;
             roomGenerator.UpdateCurrentRoom();
+            //if (other.GetComponent<Player>().weapon
         }
     }
 

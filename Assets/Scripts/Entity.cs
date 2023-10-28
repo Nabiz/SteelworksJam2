@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Entity : MonoBehaviour
 {
-	private float hp;
+	[SerializeField] private float hp;
     public float HP {
 	    get { return hp; }
 	    set
@@ -24,7 +24,10 @@ public class Entity : MonoBehaviour
     private void Awake()
     {
 	    rb = GetComponent<Rigidbody>();
-		weapon = GetComponentInChildren<Weapon>();
+		if (weapon == null)
+		{
+			weapon = GetComponentInChildren<Weapon>();
+		}
 		weapon.spawner = this;
     }
 
