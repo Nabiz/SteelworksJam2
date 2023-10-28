@@ -13,27 +13,42 @@ public class Scythe : Weapon
 			//first attack pushes forward
 			spawner.rb.AddForce(new Vector3(spawner.facingDir.x, 0, spawner.facingDir.y) * knockback, ForceMode.Impulse);
 
-			//GameObject scythe = Instantiate(projectiles[0].gameObject);
-			//scythe.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * projectiles[0].offset, transform.position.y, transform.position.z + spawner.facingDir.y * projectiles[0].offset);
 			SpawnProj(combo, spawner.facingDir, true);
 		}
 		else if (combo == 1)
 		{
-			//GameObject scythe = Instantiate(projectiles[0].gameObject);
-			//scythe.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * projectiles[0].offset, transform.position.y, transform.position.z + spawner.facingDir.y * projectiles[0].offset);
 			SpawnProj(combo, spawner.facingDir, true);
 		}
 
 
 		combo += 1;
-		if (combo >= projectiles.Count)
+		if (combo >= 2)
 		{
 			combo = 0;
 		}
 	}
 
-	public override void OnTargetHit(Entity target, Projectile source)
+	public override void Charge()
 	{
+		base.Charge();
+		Debug.Log("Charge");
+	}
+
+	public override void ReleaseCharge()
+	{
+		base.ReleaseCharge();
+		Debug.Log("relCharge");
+		combo = 2;
+
+		spawner.rb.AddForce(new Vector3(spawner.facingDir.x, 0, spawner.facingDir.y) * knockback, ForceMode.Impulse);
+
+		SpawnProj(combo, spawner.facingDir, true);
+		combo = 0;
+	}
+
+	public override void OnTargetHit(Entity target, Projectile source, out bool hit)
+	{
+		base.OnTargetHit(target, source, out hit);
 		if (combo == 1)
 		{
 			//second pushes back enemies //but with lower force

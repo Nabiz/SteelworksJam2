@@ -13,11 +13,14 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] public float charge;
 
     public Entity spawner;
-    
-    // [SerializeField] protected List<GameObject> createdProjectiles;
-    // [SerializeField] protected float projectilesLimit;
-    
-    float cooldownTimer;
+
+    private void Awake()
+	{
+        for (int i = 0; i < projectiles.Count; ++i)
+		{
+            projectiles[i].gameObject.SetActive(false);
+		}
+	}
 
     private void Update()
     {
@@ -27,7 +30,16 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    public abstract void OnTargetHit(Entity target, Projectile source);
+    //if returned false then do not apply damage
+    public virtual void OnTargetHit(Entity target, Projectile source, out bool hit)
+	{
+        hit = true;
+        if (target == spawner)
+		{
+            hit = false;
+		}
+        Debug.Log("HERE");
+    }
 
     public virtual void Fire()
     {
@@ -47,25 +59,25 @@ public abstract class Weapon : MonoBehaviour
 
 	}
 
-    /*
-    protected Projectile SpawnProj()
+    public virtual void OnRoomChange()
 	{
-        Projectile proj = Instantiate(projectiles[0].gameObject).GetComponent;
-        proj.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * proj.offset, transform.position.y, transform.position.z + spawner.facingDir.y * proj.offset);
-        return proj.GetComponent<Projectile>();
-    }
-    */
+
+	}
+
     protected Projectile SpawnProj(int index, Vector2 facing, bool isChild)
     {
         Projectile proj = Instantiate(projectiles[index].gameObject).GetComponent<Projectile>();
+        proj.rb = proj.GetComponent<Rigidbody>(); //do not ask me why, but for some reason THIS is faster then awake in proj.
         if (isChild)
 		{
             proj.transform.SetParent(spawner.transform);
+            proj.rb.isKinematic = true;
 		}
         proj.gameObject.SetActive(true);
         proj.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * proj.offset, transform.position.y, transform.position.z + spawner.facingDir.y * proj.offset);
         proj.transform.rotation = Quaternion.LookRotation(new Vector3(spawner.facingDir.x, 0, spawner.facingDir.y), Vector3.up);
         proj.facingDir = facing;
+        proj.weapon = this;
         return proj.GetComponent<Projectile>();
     }
 }
