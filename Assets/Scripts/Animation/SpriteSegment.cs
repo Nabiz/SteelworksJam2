@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,42 @@ using UnityEngine;
 public class SpriteSegment : MonoBehaviour
 {
     [SerializeField] Enums.Direction dir;
-	// Start is called before the first frame update
-	void Start()
+
+    SpriteAnimator animator;
+    
+    float progress = -1f;
+
+    bool reverse = false;
+
+    Vector3 originalPosition;
+
+    void Start()
     {
-        
+        originalPosition = transform.localPosition;
+    }
+
+	// Start is called before the first frame update
+	void Awake()
+    {
+        animator = GetComponentInParent<SpriteAnimator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        progress += Time.deltaTime * animator.AnimationSpeed * (reverse ? -1f : 1f);
 
+        if (!reverse && progress >= 1f)
+        {
+            progress = 1f;
+            reverse = true;
+        } else if (reverse && progress <= 0f)
+        {
+            progress = 0f;
+            reverse = false;
+        }
+
+        Animate();
     }
 
     public void ChangeDirection()
@@ -49,5 +76,19 @@ public class SpriteSegment : MonoBehaviour
             return;
         }
         dir = direct;
+    }
+
+    void Animate() {
+        Vector3 positionOffset = new Vector3(progress, 0f, Mathf.Abs((float)Math.Sin(2 * Math.PI * progress)));
+        transform.localPosition = originalPosition + positionOffset;
+    }
+
+    public void Init(float offset) {
+        if (progress != -1f) return;
+
+        if (offset > 0f && offset < 1f) {
+            progress = offset;
+            reverse = true;
+        }
     }
 }
