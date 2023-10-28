@@ -82,8 +82,4 @@ public class PlayerRealWorld : Player
         Debug.Log($"{nearestProps.Count}");
         return nearestProps;
     }
-
-    void OnDrawGizmos () {
-        Gizmos.DrawWireSphere(transform.position, propsDetectionRadius);
-    }
 }
