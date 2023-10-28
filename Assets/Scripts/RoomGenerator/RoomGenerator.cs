@@ -17,7 +17,7 @@ public class RoomGenerator : MonoBehaviour
 
     private List<GameObject> roomList = new List<GameObject>();
      
-    private Room currentRoom;
+    public Room currentRoom;
     
     public void Generate(List<Prop> propsList)
     {
