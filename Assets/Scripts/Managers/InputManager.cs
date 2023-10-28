@@ -22,6 +22,11 @@ public class InputManager : MonoBehaviour
             GameManager.Instance.GetPlayer().Move(speed);
             GameManager.Instance.GetPlayer().Rotate(screenRot);
         }
+
+        if (charged)
+		{
+            GameManager.Instance.GetPlayer().weapon.Charge();
+        }
     }
 
     public void Move (InputAction.CallbackContext context)
@@ -49,7 +54,7 @@ public class InputManager : MonoBehaviour
         {
             Debug.Log("charging fire");
             charged = true;
-            GameManager.Instance.GetPlayer().weapon.Charge();
+            //GameManager.Instance.GetPlayer().weapon.Charge();
         }
         else if (context.canceled && charged)
         {
@@ -61,6 +66,7 @@ public class InputManager : MonoBehaviour
                 case Enums.GameState.roguelike:
                     Debug.Log("release charge");
                     GameManager.Instance.GetPlayer().weapon.ReleaseCharge();
+                    charged = false;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

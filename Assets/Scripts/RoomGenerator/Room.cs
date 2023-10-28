@@ -14,9 +14,12 @@ public class Room : MonoBehaviour
 
     public void SpawnEnemies(List<GameObject> enemiesInRoom)
     {
+        Debug.Log($"spawn {enemiesInRoom.Count} enemies");
         foreach (SpawnPoint spawnPoint in spawnPoints)
         {
-            spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count)]);
+            if (enemiesInRoom.Count == 0)
+                break;
+            spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count - 1)]);
         }
     }
 }

@@ -22,8 +22,9 @@ public class Enums : MonoBehaviour
     {
         none = 0,
         electrician = 1,
-        driver = 2,
-        plumber = 3,
-        builder = 4
+        gangster = 2,
+        gardener = 3,
+        medic = 4,
+        pedestrian = 5,
     }
 }

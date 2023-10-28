@@ -28,14 +28,17 @@ public class NPC : MonoBehaviour
             case Enums.NPCType.electrician:
                 GetComponentInChildren<Renderer>().material.color = Color.blue;
                 break;
-            case Enums.NPCType.driver:
-                GetComponentInChildren<Renderer>().material.color = Color.magenta;
-                break;
-            case Enums.NPCType.plumber:
+            case Enums.NPCType.gangster:
                 GetComponentInChildren<Renderer>().material.color = Color.green;
                 break;
-            case Enums.NPCType.builder:
+            case Enums.NPCType.gardener:
+                GetComponentInChildren<Renderer>().material.color = Color.red;
+                break;
+            case Enums.NPCType.medic:
                 GetComponentInChildren<Renderer>().material.color = Color.yellow;
+                break;
+            case Enums.NPCType.pedestrian:
+                GetComponentInChildren<Renderer>().material.color = Color.white;
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -46,8 +49,8 @@ public class NPC : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(1f, 10f));
             GoTo(new Vector3(Random.Range(RealWorld.Instance.worldBoundsLeft, RealWorld.Instance.worldBoundsRight), 0, Random.Range(RealWorld.Instance.worldBoundsDown, RealWorld.Instance.worldBoundsUp)));
+            yield return new WaitForSeconds(Random.Range(1f, 10f));
         }
     }
 
