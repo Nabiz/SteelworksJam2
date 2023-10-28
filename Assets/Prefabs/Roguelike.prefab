@@ -134,10 +134,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 750300618879364045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMin: {x: 0.35000002, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 152.50003, y: 0}
-  m_SizeDelta: {x: -304.99994, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: 10.000061, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3837480409055696160
 CanvasRenderer:
@@ -211,7 +211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -0}
+  m_AnchoredPosition: {x: -27, y: -0}
   m_SizeDelta: {x: 160, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8949357635015467019
@@ -267,7 +267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5909923669737197990
 Transform:
   m_ObjectHideFlags: 0
@@ -455,10 +455,10 @@ RectTransform:
   - {fileID: 3764853072133125668}
   m_Father: {fileID: 750300618879364045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.35000002, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -157.5, y: 0}
+  m_SizeDelta: {x: 295, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5069740889049585783
 GameObject:
@@ -494,8 +494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 140, y: 0}
-  m_SizeDelta: {x: -270, y: -0.00000059604645}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7011474525234757584
 CanvasRenderer:
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -656,10 +656,10 @@ RectTransform:
   - {fileID: 6584757562111533989}
   m_Father: {fileID: 750300618879364045}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 6, y: -0.2199974}
-  m_SizeDelta: {x: -111.999985, y: -37.04001}
+  m_AnchorMin: {x: 0.35000002, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.8055556}
+  m_AnchoredPosition: {x: -48, y: -4.0999985}
+  m_SizeDelta: {x: -126, y: -44.800007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &2583943756299993018
 PrefabInstance:
@@ -746,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 473730833958602438, guid: 162cafe380a10c942a28490ab13117a5,
         type: 3}
       propertyPath: m_Name
-      value: Player
+      value: RoguePlayer
       objectReference: {fileID: 0}
     - target: {fileID: 2734705797870959752, guid: 162cafe380a10c942a28490ab13117a5,
         type: 3}
