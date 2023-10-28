@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 6307369882946047999}
   m_Layer: 0
   m_Name: Keyboard
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,10 +304,10 @@ MonoBehaviour:
   rb: {fileID: 7149120401871509299}
   facingDir: {x: 0, y: 1}
   contactDamage: 5
-  speed: 6
+  speed: 4
   animator: {fileID: 8106228532458634375}
-  normalSpeed: 6
-  dashSpeed: 12
+  normalSpeed: 4
+  dashSpeed: 8
 --- !u!65 &6307369882946047999
 BoxCollider:
   m_ObjectHideFlags: 0

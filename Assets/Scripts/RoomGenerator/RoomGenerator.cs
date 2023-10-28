@@ -1,11 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RoomGenerator : MonoBehaviour
 {
-
+    public static RoomGenerator Instance;
     [SerializeField] private int roomCount = 15;
     [SerializeField] private int unitLenght = 1;
     private float xDimension;
@@ -18,7 +20,19 @@ public class RoomGenerator : MonoBehaviour
     private List<GameObject> roomList = new List<GameObject>();
      
     public Room currentRoom;
-    
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void Generate(List<Prop> propsList)
     {
         xDimension = 19.20f * unitLenght;

@@ -118,7 +118,7 @@ GameObject:
   - component: {fileID: 8539733820349127742}
   m_Layer: 0
   m_Name: DummyEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,9 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec4c2da7d94096144bac3dbf73ed4c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   weapon: {fileID: 0}
   rb: {fileID: 0}
+  facingDir: {x: 0, y: 0}
   contactDamage: 0
+  speed: 0
 --- !u!54 &8539733820349127742
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -8,8 +8,13 @@ public class Door : MonoBehaviour
     [SerializeField] Vector3 playerOffset = new Vector3(0f, 0f, 4.2f);
 
     private RoomGenerator roomGenerator;
+    public bool locked = true;
+    
     private void OnTriggerEnter(Collider other)
     {
+        if (locked)
+            return;
+        
         if (other.gameObject.GetComponent<Player>() != null)
         {
             other.gameObject.transform.position += playerOffset;

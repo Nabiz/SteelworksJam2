@@ -32,4 +32,10 @@ public abstract class Enemy : Entity
 		float y = vector.x * Mathf.Sin(angleInRadians) + vector.y * Mathf.Cos(angleInRadians);
 		return new Vector3(x, y, vector.z);
 	}
+
+	public override void Die()
+	{
+		base.Die();
+		RoomGenerator.Instance.currentRoom.EnemyDied(this);
+	}
 }
