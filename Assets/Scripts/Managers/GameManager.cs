@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     
     [SerializeField] private GameObject realWorld;
     [SerializeField] private GameObject roguelikeWorld;
+    [SerializeField] private RoomGenerator roomGenerator;
     [SerializeField] private PlayerRealWorld realWorldPlayer;
     [SerializeField] private PlayerRogue roguelikePlayer;
     [SerializeField] private Camera realWorldCamera;
@@ -68,8 +69,7 @@ public class GameManager : MonoBehaviour
         // realWorldPlayer.isControlled = false;
         // roguelikePlayer.isControlled = true;
         realWorld.SetActive(false);
-        // TODO
-        realWorldPlayer.GetNearestProps();
+        roomGenerator.Generate(realWorldPlayer.GetNearestProps());
         roguelikeWorld.SetActive(true);
     }
     
@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
         gameState = Enums.GameState.realWorld;
         // realWorldPlayer.isControlled = true;
         // roguelikePlayer.isControlled = false;
+        roomGenerator.Cleanup();
         realWorld.SetActive(true);
         roguelikeWorld.SetActive(false);
     }
