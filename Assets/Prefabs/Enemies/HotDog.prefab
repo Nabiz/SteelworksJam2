@@ -162,8 +162,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5608f8797c47c8903277f83ee64f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 50
   weapon: {fileID: 0}
   rb: {fileID: 5182790053597513317}
+  facingDir: {x: 0, y: 0}
   contactDamage: 1
   animator: {fileID: 0}
   minJumpCooldown: 2
@@ -172,7 +174,7 @@ MonoBehaviour:
   maxShootCooldown: 2
   jumpForce: 2
   jumpForceUp: 2
-  scatterDistance: 3
+  scatterDistance: 1
 --- !u!54 &5182790053597513317
 Rigidbody:
   m_ObjectHideFlags: 0
