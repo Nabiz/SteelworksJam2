@@ -616,7 +616,7 @@ Transform:
   m_GameObject: {fileID: 600413041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.098, y: 0, z: 0}
+  m_LocalPosition: {x: 1.098, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -886,7 +886,7 @@ Transform:
   m_GameObject: {fileID: 1690906140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.098, y: 100, z: 0}
+  m_LocalPosition: {x: 1.098, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1243,7 +1243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 0
-  weapon: {fileID: 1057635562006668834}
+  weapon: {fileID: 2577222281002720458}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
   isControlled: 0
@@ -2887,7 +2887,7 @@ Transform:
   m_GameObject: {fileID: 8728508366032353125}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: 0.261, z: 2.16}
+  m_LocalPosition: {x: 0.007, y: 100, z: 2.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
