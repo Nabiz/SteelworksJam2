@@ -9,4 +9,10 @@ public class PlayerRealWorld : Player
         // TODO get nearset NPC
         // takeover with spherecast
     }
+    
+    public void GetNearbyNPCs()
+    {
+        // TODO get nearset NPC
+        // takeover with spherecast
+    }
 }

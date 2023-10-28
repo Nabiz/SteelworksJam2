@@ -17,7 +17,7 @@ public class Entity : MonoBehaviour
 	    }
     }
     
-    [SerializeField] protected Weapon weapon;
+    public Weapon weapon;
 	[SerializeField] public Rigidbody rb;
 	public Vector2 facingDir;
 	
