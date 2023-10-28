@@ -6,16 +6,19 @@ public class Player : Entity
 {
 	public bool isControlled;
 	public SpriteAnimator playerAnimator;
-	[SerializeField] private float speed;
+	protected float currentSpeed;
+	[SerializeField] protected float normalSpeed;
+	[SerializeField] protected float takeoverSpeed;
 
 	private void Start()
 	{
 		isControlled = true;
+		currentSpeed = normalSpeed;
 	}
 
 	public override void Move(Vector2 move)
 	{
-		rb.AddForce(new Vector3(move.x, 0, move.y) * speed, ForceMode.Force);
+		rb.AddForce(new Vector3(move.x, 0, move.y) * currentSpeed, ForceMode.Force);
 	}
 
 	public override void Rotate(Vector2 rot)

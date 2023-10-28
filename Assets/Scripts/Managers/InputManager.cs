@@ -83,15 +83,23 @@ public class InputManager : MonoBehaviour
             }
         }
     }
-
-    public void Takeover(InputAction.CallbackContext context)
+    
+    public void RightClick(InputAction.CallbackContext context)
     {
-        if (!context.performed)
-            return;
-
-        if (GameManager.Instance.gameState == Enums.GameState.realWorld)
+        if (context.performed)
         {
-            ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
+            switch (GameManager.Instance.gameState)
+            {
+                case Enums.GameState.realWorld:
+                    Debug.Log("real world release");
+                    ((PlayerRealWorld)GameManager.Instance.GetPlayer()).ReleaseNPC();
+                    break;
+                case Enums.GameState.roguelike:
+                    Debug.Log("can't release in roguelike");
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
     }
 }

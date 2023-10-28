@@ -716,7 +716,7 @@ MonoBehaviour:
   npcs: []
   npcPrefab: {fileID: 4707228607378828842, guid: 6d554890c87afcf478ae226ee5690589,
     type: 3}
-  npcParent: {fileID: 0}
+  npcParent: {fileID: 5170652033974895981}
   npcToGenerate: 20
   worldBoundsUp: 20
   worldBoundsRight: 20
@@ -1129,7 +1129,5 @@ MonoBehaviour:
   facingDir: {x: 0, y: 0}
   isControlled: 0
   playerAnimator: {fileID: 4396485492032795725}
-  playerChildControll: {fileID: 0}
-  ChildStretch: 1
-  speed: 60
-  velChange: {x: 0, y: 0, z: 0}
+  normalSpeed: 60
+  takeoverSpeed: 15

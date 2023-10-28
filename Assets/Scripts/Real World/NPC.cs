@@ -42,7 +42,7 @@ public class NPC : MonoBehaviour
         }
     }
 
-    protected virtual IEnumerator AI()
+    public virtual IEnumerator AI()
     {
         while (true)
         {
@@ -54,5 +54,10 @@ public class NPC : MonoBehaviour
     void GoTo(Vector3 target)
     {
         navMeshAgent.destination = target;
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 }

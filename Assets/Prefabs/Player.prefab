@@ -79,10 +79,8 @@ MonoBehaviour:
   facingDir: {x: 0, y: 0}
   isControlled: 0
   playerAnimator: {fileID: 4818935836941460296}
-  playerChildControll: {fileID: 0}
-  ChildStretch: 0
-  speed: 0
-  velChange: {x: 0, y: 0, z: 0}
+  normalSpeed: 60
+  takeoverSpeed: 20
 --- !u!1 &3775343567817551672
 GameObject:
   m_ObjectHideFlags: 0

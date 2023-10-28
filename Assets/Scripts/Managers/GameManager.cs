@@ -8,7 +8,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public Enums.GameState gameState = Enums.GameState.realWorld;
+
+    public float score;
     
+    [SerializeField] private GameObject realWorld;
+    [SerializeField] private GameObject roguelikeWorld;
     [SerializeField] private PlayerRealWorld realWorldPlayer;
     [SerializeField] private PlayerRogue roguelikePlayer;
     [SerializeField] private Camera realWorldCamera;
@@ -60,14 +64,21 @@ public class GameManager : MonoBehaviour
     public void EnterRoguelike()
     {
         gameState = Enums.GameState.roguelike;
-        realWorldPlayer.isControlled = false;
-        roguelikePlayer.isControlled = true;
+        
+        // realWorldPlayer.isControlled = false;
+        // roguelikePlayer.isControlled = true;
+        realWorld.SetActive(false);
+        // TODO
+        realWorldPlayer.GetNearestProps();
+        roguelikeWorld.SetActive(true);
     }
     
     public void EnterRealWorld()
     {
         gameState = Enums.GameState.realWorld;
-        realWorldPlayer.isControlled = true;
-        roguelikePlayer.isControlled = false;
+        // realWorldPlayer.isControlled = true;
+        // roguelikePlayer.isControlled = false;
+        realWorld.SetActive(true);
+        roguelikeWorld.SetActive(false);
     }
 }
