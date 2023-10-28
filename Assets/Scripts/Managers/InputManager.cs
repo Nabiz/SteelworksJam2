@@ -45,7 +45,7 @@ public class InputManager : MonoBehaviour
     
     public void Fire(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && GameManager.Instance.gameState == Enums.GameState.roguelike)
         {
             Debug.Log("charging fire");
             charged = true;

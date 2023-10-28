@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RoomGenerator : MonoBehaviour
@@ -17,16 +18,21 @@ public class RoomGenerator : MonoBehaviour
     private List<GameObject> roomList = new List<GameObject>();
      
     private Room currentRoom;
-
-    // Start is called before the first frame update
-    void Start()
+    
+    public void Generate(List<Prop> propsList)
     {
         xDimension = 19.20f * unitLenght;
         zDimension = 10.80f * unitLenght;
 
-
         GenerateRoom(roomPrefabs[0], Vector3.zero);
         currentRoom = roomList[0].GetComponent<Room>();
+
+        List<GameObject> enemiesPrefabs = new List<GameObject>();
+        foreach (Prop prop in SelectRandomProps(propsList))
+        {
+            enemiesPrefabs.Add(prop.enemyPrefab);
+        }
+        currentRoom.SpawnEnemies(enemiesPrefabs);
 
         for(int i=0; i < roomCount; i++)
         {
@@ -105,5 +111,35 @@ public class RoomGenerator : MonoBehaviour
                 currentRoom = room.GetComponent<Room>();
             }
         }
+    }
+    
+    List<Prop> SelectRandomProps(List<Prop> props)
+    {
+        if (props == null || props.Count == 0)
+            return new List<Prop>();
+        
+        List<Prop> propsList = new List<Prop>(props);
+        List<Prop> selectedElements = new List<Prop>();
+        
+        int numberOfElementsToSelect = Random.Range(1, propsList.Count + 1);
+        for (int i = 0; i < numberOfElementsToSelect; i++)
+        {
+            int randomIndex = Random.Range(0, propsList.Count - 1);
+            selectedElements.Add(propsList[randomIndex]);
+            propsList.RemoveAt(randomIndex);
+        }
+        
+        return selectedElements;
+    }
+    
+    public void Cleanup()
+    {
+        foreach (GameObject room in roomList)
+        {
+            Destroy(room);
+        }
+        roomList.Clear();
+        possibleRoomPosition.Clear();
+        occupiedRoomPositions.Clear();
     }
 }
