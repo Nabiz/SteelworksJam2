@@ -10,6 +10,8 @@ public class PlayerRealWorld : Player
     [SerializeField] private float propsDetectionRadius = 5f;
     [SerializeField] private Prop[] props;
     [SerializeField] private NPC[] npcs;
+
+    [SerializeField] private GameObject model;
     
     public override void Start ()
     {
@@ -56,6 +58,7 @@ public class PlayerRealWorld : Player
         takenOverNPC = closestNPC;
         takenOverNPC.StopAllCoroutines();
         currentSpeed = takeoverSpeed;
+        ShowModel(false);
     }
 
     public void ReleaseNPC()
@@ -66,6 +69,7 @@ public class PlayerRealWorld : Player
         takenOverNPC.StartCoroutine(takenOverNPC.AI());
         takenOverNPC = null;
         currentSpeed = normalSpeed;
+        ShowModel(true);
     }
 
     public List<Prop> GetNearestProps()
@@ -79,5 +83,13 @@ public class PlayerRealWorld : Player
         }
         
         return nearestProps;
+    }
+
+    void ShowModel(bool status)
+    {
+        if (status)
+            model.SetActive(true);
+        else
+            model.SetActive(false);
     }
 }

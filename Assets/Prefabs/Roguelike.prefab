@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8983493542745670206}
   - component: {fileID: 2601108965440719514}
   - component: {fileID: 115673878822213688}
+  - component: {fileID: 3204761244806581687}
   m_Layer: 5
   m_Name: RouglikeUI
   m_TagString: Untagged
@@ -31,7 +32,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 750300618879364045}
+  - {fileID: 7145474300442588643}
   m_Father: {fileID: 5909923669737197990}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -102,6 +103,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3204761244806581687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769166982519352319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837675a25e43cce4286f6f2810a48559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpSlider: {fileID: 8308544671218316878}
 --- !u!1 &806019329691285601
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +146,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 750300618879364045}
+  m_Father: {fileID: 7145474300442588643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35000002, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
@@ -267,7 +281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5909923669737197990
 Transform:
   m_ObjectHideFlags: 0
@@ -283,8 +297,8 @@ Transform:
   m_Children:
   - {fileID: 4888319379770608137}
   - {fileID: 4926649076853817926}
-  - {fileID: 8722641278110185379}
   - {fileID: 6854629121903639120}
+  - {fileID: 8722641278110185379}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3074595725619491331
@@ -453,7 +467,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3764853072133125668}
-  m_Father: {fileID: 750300618879364045}
+  m_Father: {fileID: 7145474300442588643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35000002, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -493,7 +507,7 @@ RectTransform:
   m_Father: {fileID: 135163422929884224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -535,7 +549,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &6647482610223869289
+--- !u!1 &6958278541393400133
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -543,22 +557,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 750300618879364045}
-  - component: {fileID: 6865403590187482900}
+  - component: {fileID: 7145474300442588643}
+  - component: {fileID: 8308544671218316878}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: HPSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &750300618879364045
+--- !u!224 &7145474300442588643
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647482610223869289}
+  m_GameObject: {fileID: 6958278541393400133}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -73}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -574,13 +588,13 @@ RectTransform:
   m_AnchoredPosition: {x: -558, y: -131}
   m_SizeDelta: {x: 900, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6865403590187482900
+--- !u!114 &8308544671218316878
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6647482610223869289}
+  m_GameObject: {fileID: 6958278541393400133}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
@@ -654,7 +668,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6584757562111533989}
-  m_Father: {fileID: 750300618879364045}
+  m_Father: {fileID: 7145474300442588643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35000002, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.8055556}
@@ -692,17 +706,17 @@ PrefabInstance:
     - target: {fileID: 6544028367236352025, guid: f89d8cae21807e249adb2138db36d271,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6544028367236352025, guid: f89d8cae21807e249adb2138db36d271,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6544028367236352025, guid: f89d8cae21807e249adb2138db36d271,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6544028367236352025, guid: f89d8cae21807e249adb2138db36d271,
         type: 3}
@@ -761,7 +775,7 @@ PrefabInstance:
     - target: {fileID: 2734705797870959752, guid: 162cafe380a10c942a28490ab13117a5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2734705797870959752, guid: 162cafe380a10c942a28490ab13117a5,
         type: 3}
@@ -798,11 +812,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5691477102071796109, guid: 162cafe380a10c942a28490ab13117a5,
-        type: 3}
-      propertyPath: hpSlider
-      value: 
-      objectReference: {fileID: 6865403590187482900}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

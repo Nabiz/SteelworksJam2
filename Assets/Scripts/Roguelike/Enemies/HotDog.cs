@@ -8,22 +8,34 @@ public class HotDog : Enemy
 	[SerializeField] private Animator animator;
 	[SerializeField] private float minJumpCooldown;
 	[SerializeField] private float maxJumpCooldown;
-	[SerializeField] private float minShootCooldown;
-	[SerializeField] private float maxShootCooldown;
 	[SerializeField] private float jumpForce;
 	[SerializeField] private float jumpForceUp;
 	[SerializeField] private float scatterDistance;
-	
+
 	protected override IEnumerator AI()
 	{
+		StartCoroutine(MeleeAttack());
 		while (true)
 		{
-			yield return new WaitForSeconds(UnityEngine.Random.Range(minJumpCooldown, maxJumpCooldown));
+			yield return new WaitForSeconds(Random.Range(minJumpCooldown, maxJumpCooldown));
 			if (GameManager.Instance.DistanceToPlayer(transform.position) > scatterDistance)
 				Jump();
 			else
 				JumpBack();
-			yield return new WaitForSeconds(UnityEngine.Random.Range(minShootCooldown, maxShootCooldown));
+			yield return new WaitForSeconds(Random.Range(1f, 4f));
+		}
+	}
+	
+	IEnumerator MeleeAttack()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(Random.Range(1f, 2f));
+			if (GameManager.Instance.DistanceToPlayer(transform.position) < 2f)
+			{
+				facingDir = GameManager.Instance.GetPlayer().transform.position - transform.position;
+				weapon.Fire();
+			}
 		}
 	}
 

@@ -335,6 +335,7 @@ MonoBehaviour:
   propsDetectionRadius: 10
   props: []
   npcs: []
+  model: {fileID: 2460720336501432122}
 --- !u!1001 &1318120811417830485
 PrefabInstance:
   m_ObjectHideFlags: 0
