@@ -176,6 +176,7 @@ MonoBehaviour:
   jumpForce: 2
   jumpForceUp: 2
   scatterDistance: 1
+  jumpHeight: 2
 --- !u!54 &5182790053597513317
 Rigidbody:
   m_ObjectHideFlags: 0
