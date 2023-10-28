@@ -17,13 +17,15 @@ public class Entity : MonoBehaviour
 	    }
     }
     
-    [SerializeField] private Weapon weapon;
-	[SerializeField] protected Rigidbody rb;
+    [SerializeField] protected Weapon weapon;
+	[SerializeField] public Rigidbody rb;
+	public Vector2 facingDir;
 	
     private void Awake()
     {
 	    rb = GetComponent<Rigidbody>();
 		weapon = GetComponentInChildren<Weapon>();
+		weapon.spawner = this;
     }
 
 	public virtual void Move(Vector2 vector2)
@@ -35,13 +37,6 @@ public class Entity : MonoBehaviour
 	{
 		
 	}
-
-	public virtual void Fire()
-    {
-	    if (!weapon)
-		    return;
-		weapon.Fire();
-    }
 
 	public virtual void Die()
     {

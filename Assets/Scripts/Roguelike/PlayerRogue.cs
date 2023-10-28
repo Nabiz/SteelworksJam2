@@ -4,27 +4,15 @@ using UnityEngine;
 
 public class PlayerRogue : Player
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	//this does not "rotates" player, only sets it's sprite facing dir
 
-	public override void Move(Vector2 vector2)
+	/*
+	public override void Fire()
 	{
-		base.Move(vector2);
+		base.Fire(shootDir);
+		rb.AddForce(shootDir * 10, ForceMode.Impulse);
+		Debug.Log(shootDir);
 	}
-
-    //this does not "rotates" player, only sets it's sprite facing dir
-	public override void Rotate(Vector2 vector2)
-	{
-		//get face direction
-
-	}
+	*/
 }

@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public Vector2 facingDir;
+
+    public float offset;
+    public float cooldown;
     public float speed;
     public float damage;
     public float lifetime;
@@ -12,6 +16,7 @@ public class Projectile : MonoBehaviour
     public float pierceCooldown;
     public int pierceLifetime;
     public Sprite sprite;
+    public Weapon weapon;
     
     [SerializeField] private float currentPierceLifetime;
 
@@ -35,7 +40,9 @@ public class Projectile : MonoBehaviour
         {
             if (currentPierceLifetime >= 0)
             {
-                other.gameObject.GetComponent<Entity>().HP -= damage;
+                Entity target = other.gameObject.GetComponent<Entity>();
+                target.HP -= damage;
+                weapon.OnTargetHit(target, this);
                 currentPierceLifetime = pierceCooldown;
             }
 

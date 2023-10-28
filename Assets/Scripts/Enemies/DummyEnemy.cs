@@ -9,7 +9,6 @@ public class DummyEnemy : Enemy
 	{
 		while (true)
 		{
-			Fire();
 			yield return new WaitForSeconds(1f);
 		}
 	}
