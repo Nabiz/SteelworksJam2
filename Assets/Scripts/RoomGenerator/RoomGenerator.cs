@@ -5,24 +5,27 @@ using UnityEngine;
 public class RoomGenerator : MonoBehaviour
 {
 
+    [SerializeField] private int roomCount = 15;
     [SerializeField] private int unitLenght = 1;
-    private int xDimension;
-    private int zDimension;
+    private float xDimension;
+    private float zDimension;
 
     [SerializeField] private List<GameObject> roomPrefabs;
     [SerializeField] private List<Vector3> possibleRoomPosition;
     private List<Vector3> occupiedRoomPositions = new List<Vector3>();
 
+    private List<GameObject> roomList = new List<GameObject>();
+
     // Start is called before the first frame update
     void Start()
     {
-        xDimension = 16 * unitLenght;
-        zDimension = 9 * unitLenght;
+        xDimension = 19.20f * unitLenght;
+        zDimension = 10.80f * unitLenght;
 
 
         GenerateRoom(roomPrefabs[0], Vector3.zero);
 
-        for(int i=0; i < 15; i++)
+        for(int i=0; i < roomCount; i++)
         {
             GameObject randomRoom = roomPrefabs[Random.Range(0, roomPrefabs.Count)];
             int randomRoomPositionIndex = Random.Range(0, possibleRoomPosition.Count);
@@ -30,16 +33,13 @@ public class RoomGenerator : MonoBehaviour
             possibleRoomPosition.RemoveAt(randomRoomPositionIndex);
             GenerateRoom(randomRoom, randomRoomPosition);
         }
-
-        foreach(Vector3 vec in occupiedRoomPositions)
-        {
-            Debug.Log(vec);
-        }
+        RemoveDoors();
     }
 
     private void GenerateRoom(GameObject room, Vector3 roomPosition)
     {
         GameObject newRoom = Instantiate(room, roomPosition, Quaternion.identity, transform);
+        roomList.Add(newRoom);
         occupiedRoomPositions.Add(roomPosition);
         Vector3[] vector3s = { roomPosition + Vector3.forward * zDimension,
                                 roomPosition + Vector3.back * zDimension,
@@ -55,9 +55,29 @@ public class RoomGenerator : MonoBehaviour
                     possibleRoomPosition.Add(vector);
                 }
             }
-            else
+        }
+    }
+
+    private void RemoveDoors()
+    {
+        foreach(GameObject roomObject in roomList)
+        {
+            Room room = roomObject.GetComponent<Room>();
+            if (occupiedRoomPositions.Contains(room.transform.position + Vector3.forward * zDimension))
             {
-                Debug.Log("DUPA");
+                room.doorUp.SetActive(true);
+            }
+            if (occupiedRoomPositions.Contains(room.transform.position + Vector3.back * zDimension))
+            {
+                room.doorDown.SetActive(true);
+            }
+            if (occupiedRoomPositions.Contains(room.transform.position + Vector3.right * xDimension))
+            {
+                room.doorRight.SetActive(true);
+            }
+            if (occupiedRoomPositions.Contains(room.transform.position + Vector3.left * xDimension))
+            {
+                room.doorLeft.SetActive(true);
             }
         }
     }
