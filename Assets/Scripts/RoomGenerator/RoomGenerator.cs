@@ -108,7 +108,6 @@ public class RoomGenerator : MonoBehaviour
 
             if((System.Math.Abs(cameraPosX-roomPosX) < 0.1f) && (System.Math.Abs(cameraPosZ - roomPosZ) < 0.1f))
             {
-                Debug.Log("GITUWA");
                 currentRoom = room.GetComponent<Room>();
             }
         }
