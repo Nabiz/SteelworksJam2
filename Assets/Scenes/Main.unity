@@ -603,8 +603,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: JunctionBox
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2747231165902563563, guid: ab0eceadfd8162b4982e9a010007965d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
