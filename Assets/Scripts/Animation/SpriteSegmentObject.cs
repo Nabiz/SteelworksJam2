@@ -1,14 +1,24 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteSegment : MonoBehaviour
+public class SpriteSegmentObject : SpriteSegment
 {
-    [SerializeField] protected Enums.Direction dir;
+    [SerializeField] Enums.Direction dir;
+    // Start is called before the first frame update
+    void Start()
+    {
 
-    public virtual void ChangeDirection()
-	{
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public override void ChangeDirection()
+    {
         Vector3 newRot = new Vector3(gameObject.transform.rotation.eulerAngles.x, 0, gameObject.transform.rotation.eulerAngles.z);
         if ((int)dir == 0)
         {
@@ -23,35 +33,21 @@ public class SpriteSegment : MonoBehaviour
             newRot.y = 180;
         }
         else if ((int)dir == 3)
-		{
+        {
             newRot.y = 270;
         }
 
         transform.eulerAngles = newRot;
     }
 
-    public virtual void SetDirection(Enums.Direction direct)
-	{
+    public override void SetDirection(Enums.Direction direct)
+    {
         if (direct != dir)
-		{
+        {
             dir = direct; //this has to be first!
             ChangeDirection();
             return;
         }
         dir = direct;
-    }
-
-    void Animate() {
-        Vector3 positionOffset = new Vector3(progress, 0f, Mathf.Abs((float)Math.Sin(2 * Math.PI * progress)));
-        transform.localPosition = originalPosition + positionOffset;
-    }
-
-    public void Init(float offset) {
-        if (progress != -1f) return;
-
-        if (offset > 0f && offset < 1f) {
-            progress = offset;
-            reverse = true;
-        }
     }
 }
