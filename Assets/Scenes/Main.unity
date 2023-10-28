@@ -583,6 +583,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roguelike
       objectReference: {fileID: 0}
+    - target: {fileID: 2148420839279196805, guid: af96fcc9824d46d4faa867bb4ac4344f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753068183673315389, guid: af96fcc9824d46d4faa867bb4ac4344f,
+        type: 3}
+      propertyPath: roomPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753068183673315389, guid: af96fcc9824d46d4faa867bb4ac4344f,
+        type: 3}
+      propertyPath: roomPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 3894116656040041391, guid: 975977f25782ea64cafe8ad3c2b37542,
+        type: 3}
     - target: {fileID: 5909923669737197990, guid: af96fcc9824d46d4faa867bb4ac4344f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -632,6 +648,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584757562111533989, guid: af96fcc9824d46d4faa867bb4ac4344f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584757562111533989, guid: af96fcc9824d46d4faa867bb4ac4344f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8953207871887179806, guid: af96fcc9824d46d4faa867bb4ac4344f,
         type: 3}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1316934830771480656}
   - component: {fileID: 5991751436801605821}
   m_Layer: 0
-  m_Name: Leszy
+  m_Name: Leszy01
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
