@@ -223,7 +223,7 @@ PrefabInstance:
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: playerOffset.z
-      value: -4.2
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6991185850168549674, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: playerOffset.z
-      value: 4.2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -428,7 +428,7 @@ PrefabInstance:
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: playerOffset.x
-      value: -4.2
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
@@ -548,7 +548,7 @@ PrefabInstance:
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: playerOffset.x
-      value: 4.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}

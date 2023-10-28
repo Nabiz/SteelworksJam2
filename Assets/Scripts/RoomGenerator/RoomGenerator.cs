@@ -15,8 +15,8 @@ public class RoomGenerator : MonoBehaviour
     private List<Vector3> occupiedRoomPositions = new List<Vector3>();
 
     private List<GameObject> roomList = new List<GameObject>();
-
-    public Camera mainCamera;
+     
+    private Room currentRoom;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +26,7 @@ public class RoomGenerator : MonoBehaviour
 
 
         GenerateRoom(roomPrefabs[0], Vector3.zero);
+        currentRoom = roomList[0].GetComponent<Room>();
 
         for(int i=0; i < roomCount; i++)
         {
@@ -43,6 +44,11 @@ public class RoomGenerator : MonoBehaviour
         GameObject newRoom = Instantiate(room, roomPosition, Quaternion.identity, transform);
         roomList.Add(newRoom);
         occupiedRoomPositions.Add(roomPosition);
+        newRoom.GetComponent<Room>().doorUp.GetComponent<Door>().SetRoomGenerator(this);
+        newRoom.GetComponent<Room>().doorDown.GetComponent<Door>().SetRoomGenerator(this);
+        newRoom.GetComponent<Room>().doorRight.GetComponent<Door>().SetRoomGenerator(this);
+        newRoom.GetComponent<Room>().doorLeft.GetComponent<Door>().SetRoomGenerator(this);
+
         Vector3[] vector3s = { roomPosition + Vector3.forward * zDimension,
                                 roomPosition + Vector3.back * zDimension,
                                 roomPosition + Vector3.right * xDimension,
@@ -80,6 +86,23 @@ public class RoomGenerator : MonoBehaviour
             if (occupiedRoomPositions.Contains(room.transform.position + Vector3.left * xDimension))
             {
                 room.doorLeft.SetActive(true);
+            }
+        }
+    }
+
+    public void UpdateCurrentRoom()
+    {
+        float cameraPosX = Camera.main.transform.position.x;
+        float cameraPosZ = Camera.main.transform.position.z;
+        foreach (GameObject room in roomList)
+        {
+            float roomPosX = room.transform.position.x;
+            float roomPosZ = room.transform.position.z;
+
+            if((System.Math.Abs(cameraPosX-roomPosX) < 0.1f) && (System.Math.Abs(cameraPosZ - roomPosZ) < 0.1f))
+            {
+                Debug.Log("GITUWA");
+                currentRoom = room.GetComponent<Room>();
             }
         }
     }
