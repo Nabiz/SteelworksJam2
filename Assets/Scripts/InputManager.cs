@@ -10,12 +10,17 @@ public class InputManager : MonoBehaviour
     private Vector2 speed;
     private Vector2 rotation;
     
-    private void Update()
+    private void FixedUpdate()
     {
         if (player.IsControlled())
 		{
+            Vector3 PlayerScreenPos = Camera.main.WorldToScreenPoint(player.transform.position);
+            Vector2 screenRot = new Vector2(rotation.x - PlayerScreenPos.x, rotation.y - PlayerScreenPos.y);
+            screenRot = new Vector2(screenRot.x / Camera.main.pixelWidth, screenRot.y / Camera.main.pixelHeight);
+            screenRot.Normalize();
+            player.facingDir = screenRot;
             player.Move(speed);
-            player.Rotate(rotation);
+            player.Rotate(screenRot);
         }
 
     }
@@ -37,7 +42,6 @@ public class InputManager : MonoBehaviour
             return;
         
         rotation = context.ReadValue<Vector2>();
-        Debug.Log(rotation);
     }
     
     public void Fire(InputAction.CallbackContext context)

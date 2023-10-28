@@ -7,6 +7,8 @@ public class Scythe : Weapon
 	public override void Fire()
 	{
 		base.Fire();
-		Instantiate(projectiles[0], transform.position, transform.rotation);
+		spawner.rb.AddForce(spawner.facingDir, ForceMode.Impulse);
+		GameObject scythe = Instantiate(projectiles[0]);
+		scythe.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * 3, transform.position.y, transform.position.z + spawner.facingDir.y * 3);
 	}
 }

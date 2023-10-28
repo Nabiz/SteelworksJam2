@@ -9,6 +9,8 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected float cooldown;
 
     [SerializeField] private float currentCooldown;
+
+    public Entity spawner;
     
     // [SerializeField] protected List<GameObject> createdProjectiles;
     // [SerializeField] protected float projectilesLimit;
