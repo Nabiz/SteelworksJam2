@@ -70,7 +70,6 @@ public class PlayerRealWorld : Player
 
     public List<Prop> GetNearestProps()
     {
-        Debug.Log("search for nearest props");
         List<Prop> nearestProps = new List<Prop>();
 
         foreach (Prop prop in props)
@@ -78,8 +77,7 @@ public class PlayerRealWorld : Player
             if (Vector3.Distance(transform.position, prop.transform.position) < propsDetectionRadius)
                 nearestProps.Add(prop);
         }
-
-        Debug.Log($"{nearestProps.Count}");
+        
         return nearestProps;
     }
 }
