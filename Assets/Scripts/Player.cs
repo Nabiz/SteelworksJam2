@@ -32,11 +32,11 @@ public class Player : Entity
 		if (lastMoved)
 		{
 			Vector3 oldVel = rb.velocity;
-			//rb.AddForce(new Vector3(move.x, 0, move.y) * speed, ForceMode.Force);
+			rb.AddForce(new Vector3(move.x, 0, move.y) * speed, ForceMode.Force);
 			moveTimer += Time.deltaTime;
 			Debug.Log(rb.velocity + " a " + oldVel);
 			velChange += rb.velocity - oldVel;
-			rb.MovePosition(new Vector3(transform.position.x + move.x * Time.deltaTime * speed, 0, transform.position.z + move.y * Time.deltaTime * speed));
+			//rb.MovePosition(new Vector3(transform.position.x + move.x * Time.deltaTime * speed, 0, transform.position.z + move.y * Time.deltaTime * speed));
 			if (move.magnitude == 0)
 			{
 				rb.AddForce(-velChange, ForceMode.Impulse);
