@@ -8,6 +8,7 @@ public class InputManager : MonoBehaviour
 {
     private Vector2 speed;
     private Vector2 rotation;
+    private bool charged;
 
     private void FixedUpdate()
     {
@@ -44,10 +45,43 @@ public class InputManager : MonoBehaviour
     
     public void Fire(InputAction.CallbackContext context)
     {
-        if (!context.performed)
-            return;
-
-        GameManager.Instance.GetPlayer().Fire();
+        if (context.performed)
+        {
+            Debug.Log("charging fire");
+            charged = true;
+            GameManager.Instance.GetPlayer().weapon.Charge();
+        }
+        else if (context.canceled && charged)
+        {
+            switch (GameManager.Instance.gameState)
+            {
+                case Enums.GameState.realWorld:
+                    Debug.Log("can't release charge in real world");
+                    break;
+                case Enums.GameState.roguelike:
+                    Debug.Log("release charge");
+                    GameManager.Instance.GetPlayer().weapon.ReleaseCharge();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+        else if (context.canceled)
+        {
+            switch (GameManager.Instance.gameState)
+            {
+                case Enums.GameState.realWorld:
+                    Debug.Log("real world takeover");
+                    ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
+                    break;
+                case Enums.GameState.roguelike:
+                    Debug.Log("fire");
+                    GameManager.Instance.GetPlayer().Fire();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
     }
 
     public void Takeover(InputAction.CallbackContext context)
