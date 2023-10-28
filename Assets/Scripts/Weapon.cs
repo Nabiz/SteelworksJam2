@@ -55,9 +55,13 @@ public abstract class Weapon : MonoBehaviour
         return proj.GetComponent<Projectile>();
     }
     */
-    protected Projectile SpawnProj(int index, Vector2 facing)
+    protected Projectile SpawnProj(int index, Vector2 facing, bool isChild)
     {
         Projectile proj = Instantiate(projectiles[index].gameObject).GetComponent<Projectile>();
+        if (isChild)
+		{
+            proj.transform.SetParent(spawner.transform);
+		}
         proj.gameObject.SetActive(true);
         proj.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * proj.offset, transform.position.y, transform.position.z + spawner.facingDir.y * proj.offset);
         proj.transform.rotation = Quaternion.LookRotation(new Vector3(spawner.facingDir.x, 0, spawner.facingDir.y), Vector3.up);

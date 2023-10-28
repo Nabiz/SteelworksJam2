@@ -15,13 +15,13 @@ public class Scythe : Weapon
 
 			//GameObject scythe = Instantiate(projectiles[0].gameObject);
 			//scythe.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * projectiles[0].offset, transform.position.y, transform.position.z + spawner.facingDir.y * projectiles[0].offset);
-			SpawnProj(combo, spawner.facingDir);
+			SpawnProj(combo, spawner.facingDir, true);
 		}
 		else if (combo == 1)
 		{
 			//GameObject scythe = Instantiate(projectiles[0].gameObject);
 			//scythe.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * projectiles[0].offset, transform.position.y, transform.position.z + spawner.facingDir.y * projectiles[0].offset);
-			SpawnProj(combo, spawner.facingDir);
+			SpawnProj(combo, spawner.facingDir, true);
 		}
 
 

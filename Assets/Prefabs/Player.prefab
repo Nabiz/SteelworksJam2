@@ -44,7 +44,7 @@ Rigidbody:
   m_GameObject: {fileID: 460466221879523215}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 6
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -77,9 +77,12 @@ MonoBehaviour:
   weapon: {fileID: 7957966672120281492}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
+  isControlled: 0
   playerAnimator: {fileID: 4818935836941460296}
   playerChildControll: {fileID: 0}
   ChildStretch: 0
+  speed: 0
+  velChange: {x: 0, y: 0, z: 0}
 --- !u!1 &3775343567817551672
 GameObject:
   m_ObjectHideFlags: 0
