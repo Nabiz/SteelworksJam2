@@ -33,11 +33,11 @@ public class SpriteSegment : MonoBehaviour
 
         if (!reverse && progress >= 1f)
         {
-            progress = 1f;
+            progress -= progress - 1f;
             reverse = true;
         } else if (reverse && progress <= 0f)
         {
-            progress = 0f;
+            progress += 2 * progress;
             reverse = false;
         }
 
@@ -79,11 +79,11 @@ public class SpriteSegment : MonoBehaviour
     }
 
     void Animate() {
-        Vector3 positionOffset = new Vector3(progress, 0f, Mathf.Abs((float)Math.Sin(2 * Math.PI * progress)));
+        Vector3 positionOffset = new Vector3(progress * animator.AnimationStrength.x, 0f, Mathf.Abs((float)Math.Sin(2 * Math.PI * progress)) * animator.AnimationStrength.y);
         transform.localPosition = originalPosition + positionOffset;
     }
 
-    public void Init(float offset) {
+    public void AnimationInit(float offset) {
         if (progress != -1f) return;
 
         if (offset > 0f && offset < 1f) {
