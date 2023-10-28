@@ -44,7 +44,6 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("aaaaaaaa");
         if (other.gameObject.CompareTag("Entity"))
         {
             Debug.Log("pierce time destrys");
