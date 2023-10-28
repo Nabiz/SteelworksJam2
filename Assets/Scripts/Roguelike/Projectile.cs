@@ -46,7 +46,6 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Entity"))
         {
-            Debug.Log("pierce time destrys");
             if (currentPierceLifetime >= 0)
             {
                 Entity target = other.gameObject.GetComponentInParent<Entity>();

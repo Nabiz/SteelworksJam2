@@ -38,8 +38,7 @@ public abstract class Weapon : MonoBehaviour
 		{
             hit = false;
 		}
-        Debug.Log("HERE");
-    }
+	}
 
     public virtual void Fire()
     {

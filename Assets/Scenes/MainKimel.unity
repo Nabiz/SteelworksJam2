@@ -616,7 +616,7 @@ Transform:
   m_GameObject: {fileID: 600413041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.098, y: 0, z: 0}
+  m_LocalPosition: {x: 1.098, y: 100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -886,7 +886,7 @@ Transform:
   m_GameObject: {fileID: 1690906140}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.098, y: 100, z: 0}
+  m_LocalPosition: {x: 1.098, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1242,15 +1242,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7b51f5122e3364ea59f09a96ef5a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
-  weapon: {fileID: 1057635562006668834}
+  hp: 100
+  weapon: {fileID: 2577222281002720458}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
   isControlled: 0
   playerAnimator: {fileID: 1104523306197337622}
   normalSpeed: 60
   takeoverSpeed: 20
-  hpSlider: {fileID: 0}
+  hpSlider: {fileID: 7552917269906714075}
 --- !u!4 &277694656341048958
 Transform:
   m_ObjectHideFlags: 0
@@ -2887,7 +2887,7 @@ Transform:
   m_GameObject: {fileID: 8728508366032353125}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.007, y: 0.261, z: 2.16}
+  m_LocalPosition: {x: 0.007, y: 100, z: 2.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2934,7 +2934,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!135 &2272338133306318107
 SphereCollider:
@@ -7722,7 +7722,7 @@ Transform:
   m_GameObject: {fileID: 5465018170210390737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: -2}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:

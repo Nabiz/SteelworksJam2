@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7062366297414793858}
   m_Layer: 0
   m_Name: BiggerGuardian
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,10 +73,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef8ecb6e87096a41907806f714faf7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   weapon: {fileID: 0}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
   contactDamage: 0
+  speed: 0
 --- !u!1 &3128143218035058178
 GameObject:
   m_ObjectHideFlags: 0
