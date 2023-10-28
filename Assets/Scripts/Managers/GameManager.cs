@@ -20,4 +20,9 @@ public class GameManager : MonoBehaviour
     {
         return player;
     }
+
+    public float DistanceToPlayer(Vector3 vector3)
+    {
+        return Vector3.Distance(player.transform.position, vector3);
+    }
 }
