@@ -27,10 +27,7 @@ public abstract class Weapon : MonoBehaviour
         }
     }
 
-    public virtual void OnTargetHit(Entity target, Projectile source)
-	{
-
-	}
+    public abstract void OnTargetHit(Entity target, Projectile source);
 
     public virtual void Fire()
     {

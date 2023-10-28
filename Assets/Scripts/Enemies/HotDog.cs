@@ -24,7 +24,7 @@ public class HotDog : Enemy
 			else
 				JumpBack();
 			yield return new WaitForSeconds(UnityEngine.Random.Range(minShootCooldown, maxShootCooldown));
-			Fire();
+			weapon.Fire();
 		}
 	}
 
