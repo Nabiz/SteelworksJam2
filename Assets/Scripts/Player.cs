@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : Entity
 {
-	private bool isControlled;
+	public bool isControlled;
 	public SpriteAnimator playerAnimator;
 	public Transform playerChildControll;
 	[SerializeField] private float ChildStretch;

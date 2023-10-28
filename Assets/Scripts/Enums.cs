@@ -11,4 +11,19 @@ public class Enums : MonoBehaviour
         left = 2,
         right = 3
     }
+
+    public enum GameState
+    {
+        realWorld,
+        roguelike
+    }
+    
+    public enum NPCType
+    {
+        none = 0,
+        electrician = 1,
+        driver = 2,
+        plumber = 3,
+        builder = 4
+    }
 }

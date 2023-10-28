@@ -6,23 +6,21 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField] Player player;
     private Vector2 speed;
     private Vector2 rotation;
-    
+
     private void FixedUpdate()
     {
-        if (player.IsControlled())
+        if (GameManager.Instance.GetPlayer().IsControlled())
 		{
-            Vector3 PlayerScreenPos = Camera.main.WorldToScreenPoint(player.transform.position);
+            Vector3 PlayerScreenPos = GameManager.Instance.GetCamera().WorldToScreenPoint(GameManager.Instance.GetPlayer().transform.position);
             Vector2 screenRot = new Vector2(rotation.x - PlayerScreenPos.x, rotation.y - PlayerScreenPos.y);
-            screenRot = new Vector2(screenRot.x / Camera.main.pixelWidth, screenRot.y / Camera.main.pixelHeight);
+            screenRot = new Vector2(screenRot.x / GameManager.Instance.GetCamera().pixelWidth, screenRot.y / GameManager.Instance.GetCamera().pixelHeight);
             screenRot.Normalize();
-            player.facingDir = screenRot;
-            player.Move(speed);
-            player.Rotate(screenRot);
+            GameManager.Instance.GetPlayer().facingDir = screenRot;
+            GameManager.Instance.GetPlayer().Move(speed);
+            GameManager.Instance.GetPlayer().Rotate(screenRot);
         }
-
     }
 
     public void Move (InputAction.CallbackContext context)
@@ -49,6 +47,17 @@ public class InputManager : MonoBehaviour
         if (!context.performed)
             return;
 
-        player.Fire();
+        GameManager.Instance.GetPlayer().Fire();
+    }
+
+    public void Takeover(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+
+        if (GameManager.Instance.gameState == Enums.GameState.realWorld)
+        {
+            ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
+        }
     }
 }
