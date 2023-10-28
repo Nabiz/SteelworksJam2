@@ -44,10 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e23fd1523e8de4aa6d0e1277bbf0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomCount: 15
   unitLenght: 1
   roomPrefabs:
   - {fileID: 3894116656040041391, guid: e500ae01946e10c4989f2f3470b5d645, type: 3}
-  - {fileID: 3894116656040041391, guid: 35621a7b7e4334841a6199f4bd901f33, type: 3}
-  - {fileID: 3894116656040041391, guid: aed3b07e79d38114fbe7b2b39184959b, type: 3}
-  - {fileID: 3894116656040041391, guid: 8f5c683992b6f024d99a87f3db00781c, type: 3}
   possibleRoomPosition: []

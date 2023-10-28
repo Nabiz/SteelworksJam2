@@ -16,6 +16,8 @@ public class RoomGenerator : MonoBehaviour
 
     private List<GameObject> roomList = new List<GameObject>();
 
+    public Camera mainCamera;
+
     // Start is called before the first frame update
     void Start()
     {

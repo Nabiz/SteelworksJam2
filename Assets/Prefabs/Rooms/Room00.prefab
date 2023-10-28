@@ -215,6 +215,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: cameraOffset.z
+      value: -10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.z
+      value: -4.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6991185850168549674, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: m_Center.y
@@ -304,6 +314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.z
+      value: 4.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -398,6 +413,26 @@ PrefabInstance:
     - target: {fileID: 5754947835179428334, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: cameraOffset.x
+      value: -19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: cameraOffset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.x
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6991185850168549674, guid: c0216060f5ce16b45859096085c3b6a0,
@@ -498,6 +533,26 @@ PrefabInstance:
     - target: {fileID: 5754947835179428334, guid: c0216060f5ce16b45859096085c3b6a0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: cameraOffset.x
+      value: 19.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: cameraOffset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.x
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890651236110668626, guid: c0216060f5ce16b45859096085c3b6a0,
+        type: 3}
+      propertyPath: playerOffset.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
