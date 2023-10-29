@@ -28,6 +28,7 @@ public class RealWorld : MonoBehaviour
     void Start()
     {
         GenerateNPCs();
+        UberTutorial.Instance.SetTutorialText("WASD to move\nGo near pedestrian and hit Space to take over control\n");
     }
 
     void GenerateNPCs()
