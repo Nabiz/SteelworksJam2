@@ -14,15 +14,13 @@ public class Room : MonoBehaviour
     public List<SpawnPoint> spawnPoints;
     public List<Enemy> enemies;
 
-    public void SpawnEnemies(List<GameObject> enemiesInRoom)
+    public void SpawnEnemies()
     {
         foreach (SpawnPoint spawnPoint in spawnPoints)
         {
-            if (enemiesInRoom.Count == 0)
-                break;
-            enemies.Add(spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count - 1)]));
+            enemies.Add(spawnPoint.Spawn());
         }
-        if (spawnPoints.Count == 0 || enemiesInRoom.Count == 0)
+        if (spawnPoints.Count == 0)
         {
             GameManager.Instance.ClearRoom();
             cleared = true;

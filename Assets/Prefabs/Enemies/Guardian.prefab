@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c5317b56c0d594aaf11c8818f805fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 0
+  hp: 120
   weapon: {fileID: 0}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}

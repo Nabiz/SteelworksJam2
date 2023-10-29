@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 1e669711833b5aa48b951815c454cb8e, type: 3}
 --- !u!1 &4071038917669913364
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 1e669711833b5aa48b951815c454cb8e, type: 3}
 --- !u!1001 &739901119654131024
 PrefabInstance:
   m_ObjectHideFlags: 0
