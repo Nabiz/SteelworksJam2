@@ -40,13 +40,9 @@ public class Projectile : MonoBehaviour
                         return;
                     }
                     target.HP -= damage;
+                    if (destroyOnCollide)
+                        Destroy(gameObject);
                 }
-
-            if (destroyOnCollide)
-                Destroy(gameObject);
         }
-
-        if (destroyOnCollide)
-            Destroy(gameObject);
     }
 }
