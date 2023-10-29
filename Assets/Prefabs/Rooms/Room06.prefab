@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 5175297549695053956, guid: 61e8deb27eb9725458b4b852110bab84, type: 3}
 --- !u!1 &6566783125141580059
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: b654ac2ec48ad494a9ac65b8e9d7471a, type: 3}
 --- !u!1 &7503919241483223064
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: b654ac2ec48ad494a9ac65b8e9d7471a, type: 3}
 --- !u!1001 &915941156491957578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,6 +206,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3432250309492645766, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
+      propertyPath: spawnPoints.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432250309492645766, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
       propertyPath: spawnPoints.Array.data[0]
       value: 
       objectReference: {fileID: 4215684537253004319}
@@ -216,7 +223,7 @@ PrefabInstance:
       objectReference: {fileID: 9110902099261321638}
     - target: {fileID: 3894116656040041391, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
       propertyPath: m_Name
-      value: Room Parent Variant
+      value: Room06
       objectReference: {fileID: 0}
     - target: {fileID: 3950798453280269163, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
       propertyPath: m_LocalPosition.x
