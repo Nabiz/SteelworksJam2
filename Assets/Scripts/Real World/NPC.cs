@@ -15,6 +15,8 @@ public class NPC : MonoBehaviour
     [SerializeField] Transform hoomanPrefab;
     [SerializeField] Transform electricianPrefab;
     [SerializeField] Transform gardenerPrefab;
+    [SerializeField] Transform gangstaPrefab;
+    [SerializeField] Transform medicPrefab;
     
     // Start is called before the first frame update
     void Start()
@@ -36,13 +38,13 @@ public class NPC : MonoBehaviour
                 InstanciateModel(electricianPrefab);
                 break;
             case Enums.NPCType.gangster:
-                InstanciateModel(hoomanPrefab);
+                InstanciateModel(gangstaPrefab);
                 break;
             case Enums.NPCType.gardener:
                 InstanciateModel(gardenerPrefab);
                 break;
             case Enums.NPCType.medic:
-                InstanciateModel(hoomanPrefab);
+                InstanciateModel(medicPrefab);
                 break;
             case Enums.NPCType.pedestrian:
                 InstanciateModel(hoomanPrefab);

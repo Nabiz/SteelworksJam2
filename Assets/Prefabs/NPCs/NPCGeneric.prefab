@@ -84,6 +84,8 @@ MonoBehaviour:
   hoomanPrefab: {fileID: -8679921383154817045, guid: cef1d63f637c405428dca71cc31408c7, type: 3}
   electricianPrefab: {fileID: -8679921383154817045, guid: a7c155c7edc5c994b8c33c413702f793, type: 3}
   gardenerPrefab: {fileID: -8679921383154817045, guid: 68f8726889598bd4895a1996ab2aef22, type: 3}
+  gangstaPrefab: {fileID: -8679921383154817045, guid: cacb1feffb01cde439bccd0d57982462, type: 3}
+  medicPrefab: {fileID: -8679921383154817045, guid: 77cb682d17423f3459637e47c00b858d, type: 3}
 --- !u!195 &-5259716349304237577
 NavMeshAgent:
   m_ObjectHideFlags: 0
