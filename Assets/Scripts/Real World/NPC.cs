@@ -58,7 +58,7 @@ public class NPC : MonoBehaviour
 
     void GoTo(Vector3 target)
     {
-        if (navMeshAgent)
+        if (navMeshAgent && navMeshAgent.isActiveAndEnabled)
             navMeshAgent.destination = target;
     }
 
@@ -68,5 +68,15 @@ public class NPC : MonoBehaviour
         navMeshAgent.enabled = false;
         col.enabled = true;
         gameObject.AddComponent<Rigidbody>();
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(AI());
+    }
+    
+    private void OnDisable()
+    {
+        StopAllCoroutines();
     }
 }
