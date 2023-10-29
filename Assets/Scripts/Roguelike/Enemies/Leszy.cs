@@ -10,7 +10,8 @@ public class Leszy : Enemy
         WaitStateHandler();
 		if (state == 0) //leszy tries to attack //weapon determines cooldowns
 		{
-			facingDir = Vector3.Normalize(gameObject.transform.position - player.transform.position);
+			Vector3 aaa = Vector3.Normalize(gameObject.transform.position - player.transform.position);
+			facingDir = new Vector2(aaa.x, aaa.z);
 			Attack();
 			Debug.Log("imma attacking");
 		}

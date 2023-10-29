@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hook : Weapon
 {
-	public Projectile HookTip;
+	public GameObject HookTip;
 	public Transform PlayerPivot;
 	public float spinSpeed;
 	public float pullStrength;
@@ -19,8 +19,8 @@ public class Hook : Weapon
 		else if (combo == 1) //lodge hook in the ground
 		{
 			//HookTip.lifetime = 10000;
-			HookTip.rb.velocity = Vector3.zero;
-			HookTip.damage = HookTip.damage * 0.2f;
+			HookTip.GetComponent<Projectile>().rb.velocity = Vector3.zero;
+			HookTip.GetComponent<Projectile>().damage = HookTip.GetComponent<Projectile>().damage * 0.2f;
 			//here change sprite:
 		}
 		else if (combo == 2) //lunch towards hook
@@ -45,7 +45,7 @@ public class Hook : Weapon
 			if (PlayerPivot == null)
 			{
 				PlayerPivot = Instantiate(new GameObject(), spawner.transform).transform;
-				HookTip.rb.isKinematic = true;
+				HookTip.GetComponent<Projectile>().rb.isKinematic = true;
 				HookTip.transform.SetParent(PlayerPivot.transform); //PlayerPivot.gameObject.AddComponent<FakeChildObject>().pivot = spawner.transform;
 			}
 			//spin
