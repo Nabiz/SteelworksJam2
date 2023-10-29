@@ -15,7 +15,8 @@ public class DummyPistol : Weapon
 		if (needsReload) return;
 		//Debug.Log("fired with" + currentCooldown);
 		SpawnProj(combo, spawner.facingDir, false);
-		if(combo > projectiles.Count)
+		combo++;
+		if(combo >= projectiles.Count)
 		{
 			combo = 0;
 		}

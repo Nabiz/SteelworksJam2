@@ -92,9 +92,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3879237842997871012}
-  - component: {fileID: 7489592911997777267}
+  - component: {fileID: 987045044036972141}
   m_Layer: 0
-  m_Name: 'GuardianWeaponHook '
+  m_Name: GuardianWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ Transform:
   - {fileID: 4918562092056741107}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7489592911997777267
+--- !u!114 &987045044036972141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,18 +129,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 690809161614078430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f49dfc5a0d99bf6469157f510068c0c2, type: 3}
+  m_Script: {fileID: 11500000, guid: afe9c90031f60954491591d718819d48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectiles:
-  - {fileID: 7617830119608059355}
+  projectiles: []
   currentCooldown: 0
   combo: 0
   spawner: {fileID: 0}
-  HookTip: {fileID: 0}
-  PlayerPivot: {fileID: 0}
-  spinSpeed: 0.2
-  pullStrength: 8
 --- !u!1 &1276766081212553292
 GameObject:
   m_ObjectHideFlags: 0
