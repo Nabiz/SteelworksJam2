@@ -20,6 +20,8 @@ public abstract class Weapon : MonoBehaviour
 		{
             projectiles[i].gameObject.SetActive(false);
 		}
+
+        spawner = GetComponentInParent<Entity>();
 	}
 
     private void Update()

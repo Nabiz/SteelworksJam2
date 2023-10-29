@@ -92,15 +92,37 @@ public class InputManager : MonoBehaviour
             switch (GameManager.Instance.gameState)
             {
                 case Enums.GameState.realWorld:
-                    Debug.Log("real world release");
                     ((PlayerRealWorld)GameManager.Instance.GetPlayer()).ReleaseNPC();
                     break;
                 case Enums.GameState.roguelike:
-                    Debug.Log("can't release in roguelike");
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
             }
         }
+    }
+
+    public void ChooseWeapon1(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+        
+        GameManager.Instance.GetPlayer().EquipWeapon1();
+    }
+    
+    public void ChooseWeapon2(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+        
+        GameManager.Instance.GetPlayer().EquipWeapon2();
+    }
+    
+    public void ChooseWeapon3(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+            return;
+        
+        GameManager.Instance.GetPlayer().EquipWeapon3();
     }
 }

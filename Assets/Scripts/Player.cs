@@ -10,6 +10,8 @@ public class Player : Entity
 	[SerializeField] protected float normalSpeed;
 	[SerializeField] protected float takeoverSpeed;
 
+	public GameObject[] weaponPrefab = new GameObject[3]; 
+
 	public virtual void Start()
 	{
 		isControlled = true;
@@ -89,5 +91,29 @@ public class Player : Entity
 		{
 			HP -= other.gameObject.GetComponent<Enemy>().contactDamage;
 		}
+	}
+	
+	public void EquipWeapon1()
+	{
+		weaponPrefab[0].SetActive(true);
+		weaponPrefab[1].SetActive(false);
+		weaponPrefab[2].SetActive(false);
+		weapon = weaponPrefab[0].GetComponent<Weapon>();
+	}
+	
+	public void EquipWeapon2()
+	{
+		weaponPrefab[0].SetActive(false);
+		weaponPrefab[1].SetActive(true);
+		weaponPrefab[2].SetActive(false);
+		weapon = weaponPrefab[1].GetComponent<Weapon>();
+	}
+	
+	public void EquipWeapon3()
+	{
+		weaponPrefab[0].SetActive(false);
+		weaponPrefab[1].SetActive(false);
+		weaponPrefab[2].SetActive(true);
+		weapon = weaponPrefab[2].GetComponent<Weapon>();
 	}
 }

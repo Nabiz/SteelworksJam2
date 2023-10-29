@@ -10,6 +10,7 @@ public class Entity : MonoBehaviour
 	    get { return hp; }
 	    set
 	    {
+		    Debug.Log(name);
 		    if (value <= 0)
 			    Die();
 		    
@@ -28,7 +29,6 @@ public class Entity : MonoBehaviour
 		{
 			weapon = GetComponentInChildren<Weapon>();
 		}
-		weapon.spawner = this;
     }
 
 	public virtual void Move(Vector2 vector2)
