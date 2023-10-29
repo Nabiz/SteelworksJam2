@@ -162,7 +162,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 0.1
   speed: 4
-  damage: 5
+  damage: 2
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c5317b56c0d594aaf11c8818f805fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 120
+  hp: 60
   weapon: {fileID: 0}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
@@ -610,7 +610,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 0.1
   speed: 4
-  damage: 5
+  damage: 2
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -905,7 +905,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 0.1
   speed: 4
-  damage: 5
+  damage: 2
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -1494,6 +1494,10 @@ PrefabInstance:
     - target: {fileID: 3879237842997871012, guid: d54bfe58baf4ef24cb822a23daa24439, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617830119608059355, guid: d54bfe58baf4ef24cb822a23daa24439, type: 3}
+      propertyPath: damage
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7617830119608059355, guid: d54bfe58baf4ef24cb822a23daa24439, type: 3}
       propertyPath: cooldown

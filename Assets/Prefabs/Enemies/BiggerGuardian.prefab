@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef8ecb6e87096a41907806f714faf7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 150
+  hp: 75
   weapon: {fileID: 0}
   rb: {fileID: 0}
   facingDir: {x: 0, y: 0}
@@ -359,7 +359,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 3
   speed: 4
-  damage: 5
+  damage: 1
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -726,7 +726,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 0.05
   speed: 4
-  damage: 5
+  damage: 1
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -1307,7 +1307,7 @@ MonoBehaviour:
   offset: 0.5
   cooldown: 0.05
   speed: 4
-  damage: 5
+  damage: 1
   lifetime: 10
   destroyOnCollide: 1
   weapon: {fileID: 0}
@@ -1489,6 +1489,10 @@ PrefabInstance:
     - target: {fileID: 3879237842997871012, guid: 62fbff3c97b66624ca1d9d0bd798df7c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617830119608059355, guid: 62fbff3c97b66624ca1d9d0bd798df7c, type: 3}
+      propertyPath: damage
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
