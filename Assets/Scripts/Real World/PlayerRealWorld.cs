@@ -34,7 +34,8 @@ public class PlayerRealWorld : Player
         {
             GameManager.Instance.EnterRoguelike();
             UberTutorial.Instance.SetTutorialText("WASD to move\nLMB to attack\n1, 2, 3 key for weapon change\nClear 4 rooms to force controlled pedestrian to commit suicide");
-            SoundManager.Instance.PlayMusic(2);
+            if (SoundManager.Instance)
+                SoundManager.Instance.PlayMusic(2);
             return;
         }
         
@@ -62,7 +63,8 @@ public class PlayerRealWorld : Player
         currentSpeed = takeoverSpeed;
         ShowModel(false);
         UberTutorial.Instance.SetTutorialText("Now you are in control\nWASD to move\nRMB to let him/her go\nGuide pedestrian to dangerous place\nSPACE to go inside mind and force him/her to commit suicide");
-        SoundManager.Instance.PlaySound(0);
+        if (SoundManager.Instance)
+            SoundManager.Instance.PlaySound(0);
     }
 
     public void ReleaseNPC()
