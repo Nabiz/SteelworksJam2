@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 
 public class HotDog : Enemy
 {
+	/*
 	[SerializeField] private Animator animator;
 	[SerializeField] private float minJumpCooldown;
 	[SerializeField] private float maxJumpCooldown;
@@ -136,4 +137,5 @@ public class HotDog : Enemy
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(jumpAnchor, 0.1f);	
 	}
+	*/
 }

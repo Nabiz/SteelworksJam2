@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class Spitter : Enemy
 {
-    protected override IEnumerator AI()
-    {
-        throw new System.NotImplementedException();
-    }
+
 }

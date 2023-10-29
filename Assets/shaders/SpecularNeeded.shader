@@ -6,7 +6,7 @@ Shader "MainShader/SpecularNeeded"
 		_Shininess("Shininess", Float) = 10
 		_LightPhase("Phase", float) = 0
 		_MainTex("Texture", 2D) = "white" {}
-		_WorldPhase("WorldPhase", vector) = (1, 1, 1, 1)
+		//_WorldPhase("WorldPhase", vector) = (1, 1, 1, 1)
 	}
 
 		SubShader{
@@ -67,7 +67,7 @@ return o;
 
 sampler2D _MainTex;
 float _LightPhase;
-vector _WorldPhase;
+uniform vector _WorldPhase;
 
 // fragment fonction
 float4 frag(vtf i) : COLOR

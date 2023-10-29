@@ -11,6 +11,8 @@ public class DummyPistol : Weapon
 
 	public override void Fire()
 	{
-		Instantiate(projectiles[0], transform.position, transform.rotation);
+		base.Fire();
+		Debug.Log("fired with" + currentCooldown);
+		SpawnProj(combo, spawner.facingDir, false);
 	}
 }

@@ -8,38 +8,9 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected List<Projectile> projectiles;
     //[SerializeField] protected float cooldown; //proj schould be heaving cooldown
 
-    [SerializeField] private float currentCooldown;
+    [SerializeField] protected float currentCooldown;
 
-    private int _combo;
-    protected int combo
-    {
-	    get {
-		    return _combo;
-	    }
-	    set {
-		    _combo = value;
-	    }
-    }
-    
-    // nie działa
-    IEnumerator ComboDecay()
-    {
-	    while (combo > 0)
-	    {
-		    float i = 1f;
-		    while (i >= 0f)
-		    {
-			    i -= Time.deltaTime;
-			    yield return null;
-		    }
-
-		    combo--;
-		    yield return null;
-	    }
-	    yield return null;
-    }
-
-    [SerializeField] public float charge;
+    [SerializeField] protected int combo;
 
     public Entity spawner;
 
@@ -53,7 +24,7 @@ public abstract class Weapon : MonoBehaviour
         spawner = GetComponentInParent<Entity>();
 	}
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (currentCooldown > 0)
         {
@@ -74,9 +45,13 @@ public abstract class Weapon : MonoBehaviour
     public virtual void Fire()
     {
         if (currentCooldown > 0)
+		{
             return;
-        
-        currentCooldown = projectiles[combo].cooldown;
+		}
+		else
+		{
+            currentCooldown = projectiles[combo].cooldown;
+        }
     }
 
     public virtual void Charge()

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyboardEnemy : Enemy
 {
+	/*
 	[SerializeField] private Animator animator;
 	[SerializeField] private float normalSpeed;
 	[SerializeField] private float dashSpeed;
@@ -46,4 +47,5 @@ public class KeyboardEnemy : Enemy
 			}
 		}
 	}
+	*/
 }

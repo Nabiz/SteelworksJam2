@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class BlackSheep : Enemy
 {
-	protected override IEnumerator AI()
-	{
-		throw new System.NotImplementedException();
-	}
+
 }

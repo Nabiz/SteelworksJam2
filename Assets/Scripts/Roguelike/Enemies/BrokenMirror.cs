@@ -7,18 +7,13 @@ public class BrokenMirror : Enemy
     // Start is called before the first frame update
     void Start()
     {
+        //get player weapon
+        weapon = Instantiate(GameObject.FindFirstObjectByType<PlayerRogue>().weapon, gameObject.transform);
+        
+        //freeze AI as the head start
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    protected override IEnumerator AI()
-    {
-        yield break;
-        throw new System.NotImplementedException();
-    }
+
 }

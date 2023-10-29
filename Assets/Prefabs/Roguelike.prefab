@@ -301,6 +301,7 @@ Transform:
   - {fileID: 4926649076853817926}
   - {fileID: 6854629121903639120}
   - {fileID: 8722641278110185379}
+  - {fileID: 7776753651908595409}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3074595725619491331
@@ -1074,6 +1075,73 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &7760156843042544045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7776753651908595409}
+  - component: {fileID: 3222138368507324120}
+  - component: {fileID: 84478299726319132}
+  m_Layer: 0
+  m_Name: GlobalThings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7776753651908595409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760156843042544045}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5909923669737197990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3222138368507324120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760156843042544045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054a9ee15aa9b6544b9aa04ad26d5371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: a5dbba131720c8f4380ecfc8da3fd97b, type: 2}
+  worldPosId: 0
+  WorldPhase: {x: 0, y: 0, z: 0, w: 1}
+  scrollSpeed: 2
+  shineMagnitude: 0.28
+--- !u!114 &84478299726319132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760156843042544045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 054a9ee15aa9b6544b9aa04ad26d5371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 1e7d3b673a2049b468f63e3b22b49f5c, type: 2}
+  worldPosId: 0
+  WorldPhase: {x: 0, y: 0, z: 0, w: 0}
+  scrollSpeed: 2
+  shineMagnitude: 0.28
 --- !u!1 &8128603326947287684
 GameObject:
   m_ObjectHideFlags: 0

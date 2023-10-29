@@ -4,52 +4,32 @@ using UnityEngine;
 
 public class Leszy : Enemy
 {
-    [SerializeField] private Sprite front;
-    [SerializeField] private Sprite back;
-    [SerializeField] private Sprite left;
+	public float AwarnessDist;
+	private void FixedUpdate()
+	{
+        WaitStateHandler();
+		if (state == 0) //leszy tries to attack //weapon determines cooldowns
+		{
+			facingDir = Vector3.Normalize(gameObject.transform.position - player.transform.position);
+			Attack();
+			Debug.Log("imma attacking");
+		}
+		else if (state == 1)//leszy is not attacking, player too close
+		{
+			facingDir = new Vector3(0, 0, -1); //face down to indicate disability
+		}
 
-    private Player player;
-    private SpriteRenderer spriteRenderer;
-    private void Start()
-    {
-        player = GameManager.Instance.GetPlayer();
-        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-    }
-    private void Update()
-    {
-        Vector3 vecToPlayer = player.gameObject.transform.position - transform.position;
-        if (System.Math.Abs(vecToPlayer.x) >= System.Math.Abs(vecToPlayer.z))
-        {
-            spriteRenderer.sprite = left;
-            if (vecToPlayer.x < -0.01f)
-            {
-                spriteRenderer.flipX = false;
-            }
-            else
-            {
-                spriteRenderer.flipX = true;
-            }
-        }
-        else
-        {
-            spriteRenderer.flipX = false;
-            if (vecToPlayer.z < -0.01f)
-            {
-                spriteRenderer.sprite = front;
-            }
-            else
-            {
-                spriteRenderer.sprite = back;
-            }
-        }
-    }
+		//state change
+		float playerDist = Vector3.Distance(player.transform.position, gameObject.transform.position);
+		if (playerDist < AwarnessDist)
+		{
+			state = 1;
+		}
+		else
+		{
+			state = 0;
+		}
+	}
 
-    protected override IEnumerator AI()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(Random.Range(2f, 3f));
-            weapon.Fire();
-        }
-    }
+
 }
