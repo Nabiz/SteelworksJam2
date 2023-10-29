@@ -11,6 +11,10 @@ public class NPC : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     [SerializeField] private Collider col;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] Transform model;
+    [SerializeField] Transform hoomanPrefab;
+    [SerializeField] Transform electricianPrefab;
+    [SerializeField] Transform gardenerPrefab;
     
     // Start is called before the first frame update
     void Start()
@@ -23,24 +27,25 @@ public class NPC : MonoBehaviour
     void GenerateNPC()
     {
         npcType = (Enums.NPCType)Random.Range(1, Enum.GetNames(typeof(Enums.NPCType)).Length);
+        
         switch (npcType)
         {
             case Enums.NPCType.none:
                 break;
             case Enums.NPCType.electrician:
-                GetComponentInChildren<Renderer>().material.color = Color.blue;
+                InstanciateModel(electricianPrefab);
                 break;
             case Enums.NPCType.gangster:
-                GetComponentInChildren<Renderer>().material.color = Color.green;
+                InstanciateModel(hoomanPrefab);
                 break;
             case Enums.NPCType.gardener:
-                GetComponentInChildren<Renderer>().material.color = Color.red;
+                InstanciateModel(gardenerPrefab);
                 break;
             case Enums.NPCType.medic:
-                GetComponentInChildren<Renderer>().material.color = Color.yellow;
+                InstanciateModel(hoomanPrefab);
                 break;
             case Enums.NPCType.pedestrian:
-                GetComponentInChildren<Renderer>().material.color = Color.white;
+                InstanciateModel(hoomanPrefab);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
@@ -79,4 +84,17 @@ public class NPC : MonoBehaviour
     {
         StopAllCoroutines();
     }
+
+    void InstanciateModel(Transform prefab) {
+        Transform instanciatedModel = Instantiate(prefab, model);
+        instanciatedModel.localScale = Vector3.one * 0.6f;
+
+        Renderer renderer = instanciatedModel.GetComponent<Renderer>();
+
+        for (int i = 0; i < renderer.materials.Length; i++)
+            if (renderer.materials[i].name.Contains("Clothes"))
+                renderer.materials[i].color = RandomColor();
+    }
+
+    Color RandomColor() => new Color(Random.value, Random.value, Random.value);
 }
