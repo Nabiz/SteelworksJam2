@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 6a57f2ea4313c87498858d084dc4d756, type: 3}
 --- !u!1 &133321242833025128
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 6a57f2ea4313c87498858d084dc4d756, type: 3}
 --- !u!1 &5063920354310543796
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,6 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: b654ac2ec48ad494a9ac65b8e9d7471a, type: 3}
 --- !u!1 &5255482748877685567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,6 +1160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 5175297549695053956, guid: 61e8deb27eb9725458b4b852110bab84, type: 3}
 --- !u!1 &6858634907325828374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 5175297549695053956, guid: 61e8deb27eb9725458b4b852110bab84, type: 3}
 --- !u!1 &8131656833217267701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 5175297549695053956, guid: 61e8deb27eb9725458b4b852110bab84, type: 3}
 --- !u!1 &8277455626825161658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 5175297549695053956, guid: 61e8deb27eb9725458b4b852110bab84, type: 3}
 --- !u!1 &8421204668731304765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,6 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: b654ac2ec48ad494a9ac65b8e9d7471a, type: 3}
 --- !u!1 &9000973777486166968
 GameObject:
   m_ObjectHideFlags: 0
