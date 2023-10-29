@@ -84,7 +84,7 @@ public abstract class Weapon : MonoBehaviour
         proj.transform.position = new Vector3(transform.position.x + spawner.facingDir.x * proj.offset, transform.position.y, transform.position.z + spawner.facingDir.y * proj.offset);
         proj.transform.rotation = Quaternion.LookRotation(new Vector3(spawner.facingDir.x, 0, spawner.facingDir.y), Vector3.up);
         proj.facingDir = facing;
-        proj.weapon = this;
+        proj.weapon = gameObject.GetComponent<Weapon>();
         return proj.gameObject;
     }
 }
