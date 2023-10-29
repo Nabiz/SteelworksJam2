@@ -38,9 +38,21 @@ public abstract class Enemy : Entity
 		currentWaitTimer += Time.deltaTime;
 		if (currentWaitTimer > waitTimer)
 		{
-			state = nextState;
-			currentWaitTimer = 0;
-			requiredState = -1;
+			if (requiredState >= 0)
+			{
+				if (requiredState == state)
+				{
+					state = nextState;
+					currentWaitTimer = 0;
+					requiredState = -1;
+				}
+			}
+			else
+			{
+				state = nextState;
+				currentWaitTimer = 0;
+				requiredState = -1;
+			}	
 		}
 	}
 

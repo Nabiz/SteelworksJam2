@@ -6,7 +6,7 @@ public class Glaive : Weapon
 {
 	public float spread;
 	public float thrust;
-	public Projectile turret;
+	public GameObject turret;
 	public override void Fire()
 	{
 		base.Fire();
@@ -34,7 +34,7 @@ public class Glaive : Weapon
 		if (combo == 5) //normally unreachable state
 		{
 			//spin
-			Projectile proj = SpawnProj(combo, new Vector2(0, 0), false);
+			GameObject proj = SpawnProj(combo, new Vector2(0, 0), false);
 			proj.gameObject.transform.position = turret.transform.position;
 		}
 		else
