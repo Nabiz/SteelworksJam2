@@ -358,10 +358,7 @@ MonoBehaviour:
   doorRight: {fileID: 5901011917188024251}
   doorLeft: {fileID: 1538983997129018005}
   cleared: 0
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  spawnPoints: []
   enemies: []
 --- !u!1 &3968816630175387177
 GameObject:
