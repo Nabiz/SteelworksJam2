@@ -9,6 +9,8 @@ public class NPC : MonoBehaviour
 {
     private Enums.NPCType npcType;
     private NavMeshAgent navMeshAgent;
+    [SerializeField] private Collider collider;
+    [SerializeField] private Rigidbody rb;
     
     // Start is called before the first frame update
     void Start()
@@ -59,8 +61,10 @@ public class NPC : MonoBehaviour
         navMeshAgent.destination = target;
     }
 
-    void Die()
+    public void Die()
     {
-        Destroy(gameObject);
+        Destroy(navMeshAgent);
+        collider.enabled = true;
+        gameObject.AddComponent<Rigidbody>();
     }
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Enums.GameState gameState = Enums.GameState.realWorld;
 
     public float score;
+    public int clearedRooms;
     
     [SerializeField] private GameObject realWorld;
     [SerializeField] private GameObject roguelikeWorld;
@@ -72,7 +73,16 @@ public class GameManager : MonoBehaviour
         roomGenerator.Generate(realWorldPlayer.GetNearestProps());
         roguelikeWorld.SetActive(true);
     }
-    
+
+    public void ClearRoom()
+    {
+        if (clearedRooms == 3)
+        {
+            EnterRealWorld();
+            clearedRooms = 0;
+        }
+    }
+
     public void EnterRealWorld()
     {
         gameState = Enums.GameState.realWorld;
@@ -81,5 +91,8 @@ public class GameManager : MonoBehaviour
         roomGenerator.Cleanup();
         realWorld.SetActive(true);
         roguelikeWorld.SetActive(false);
+        score += 100;
+        ((PlayerRealWorld)GetPlayer()).takenOverNPC.Die();
+        ((PlayerRealWorld)GetPlayer()).ReleaseNPC();
     }
 }

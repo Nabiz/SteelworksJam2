@@ -10,7 +10,7 @@ public class Entity : MonoBehaviour
 	    get { return hp; }
 	    set
 	    {
-		    Debug.Log(name);
+		    // Debug.Log(name);
 		    if (value <= 0)
 			    Die();
 		    
@@ -45,6 +45,4 @@ public class Entity : MonoBehaviour
     {
 		Destroy(gameObject);
     }
-    
-    
 }

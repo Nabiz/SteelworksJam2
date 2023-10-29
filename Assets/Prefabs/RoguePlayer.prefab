@@ -952,10 +952,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2734705797870959752}
     m_Modifications:
+    - target: {fileID: 209835879151628849, guid: bf7884c00f90e3b438811ffc4d8a01d7,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836889158609786914, guid: bf7884c00f90e3b438811ffc4d8a01d7,
+        type: 3}
+      propertyPath: knockback
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3716803274798084634, guid: bf7884c00f90e3b438811ffc4d8a01d7,
         type: 3}
       propertyPath: m_Name
       value: Scythe
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285102517478679974, guid: bf7884c00f90e3b438811ffc4d8a01d7,
+        type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248194385306691569, guid: bf7884c00f90e3b438811ffc4d8a01d7,
+        type: 3}
+      propertyPath: damage
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8616893556509388376, guid: bf7884c00f90e3b438811ffc4d8a01d7,
         type: 3}

@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameState: 0
   score: 0
+  clearedRooms: 0
   realWorld: {fileID: 632679578}
   roguelikeWorld: {fileID: 3046460106312738890}
   roomGenerator: {fileID: 1270955042205348594}
@@ -748,6 +749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Overworld
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134206393991432649, guid: 9078ec6859fac434f998987c5635d471,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.49
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

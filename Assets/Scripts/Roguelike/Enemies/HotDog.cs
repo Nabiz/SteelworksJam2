@@ -40,15 +40,15 @@ public class HotDog : Enemy
 		{
 			yield return new WaitForSeconds(UnityEngine.Random.Range(minJumpCooldown, maxJumpCooldown));
 
-			Debug.Log($"{GameManager.Instance.DistanceToPlayer(transform.position)} {scatterDistance}");
+			// Debug.Log($"{GameManager.Instance.DistanceToPlayer(transform.position)} {scatterDistance}");
 			
 			if (GameManager.Instance.DistanceToPlayer(transform.position) > scatterDistance) {
-				Debug.Log("Jump Towards");
+				// Debug.Log("Jump Towards");
 				Jump();
 			}
 			else
 			{
-				Debug.Log("Jump Away");
+				// Debug.Log("Jump Away");
 				JumpBack();
 			}
 			

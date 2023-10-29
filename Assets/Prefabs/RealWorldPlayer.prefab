@@ -751,7 +751,7 @@ MonoBehaviour:
   facingDir: {x: 0, y: 0}
   isControlled: 0
   playerAnimator: {fileID: 2857317407679317675}
-  normalSpeed: 60
+  normalSpeed: 30
   takeoverSpeed: 15
   weaponPrefab:
   - {fileID: 2440488129975891535}

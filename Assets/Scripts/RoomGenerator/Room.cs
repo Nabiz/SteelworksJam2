@@ -21,6 +21,8 @@ public class Room : MonoBehaviour
                 break;
             spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count - 1)]);
         }
+        if (spawnPoints.Count == 0 || enemiesInRoom.Count == 0)
+            UnlockDoors();
     }
 
     public void EnemyDied(Enemy enemy)
@@ -28,14 +30,20 @@ public class Room : MonoBehaviour
         enemies.Remove(enemy);
         if (enemies.Count == 0)
         {
-            if (doorUp)
-                doorUp.GetComponent<Door>().locked = false;
-            if (doorDown)
-                doorDown.GetComponent<Door>().locked = false;
-            if (doorLeft)
-                doorLeft.GetComponent<Door>().locked = false;
-            if (doorRight)
-                doorRight.GetComponent<Door>().locked = false;
+            GameManager.Instance.ClearRoom();
+            UnlockDoors();
         }
+    }
+
+    void UnlockDoors()
+    {
+        if (doorUp)
+            doorUp.GetComponent<Door>().locked = false;
+        if (doorDown)
+            doorDown.GetComponent<Door>().locked = false;
+        if (doorLeft)
+            doorLeft.GetComponent<Door>().locked = false;
+        if (doorRight)
+            doorRight.GetComponent<Door>().locked = false;
     }
 }

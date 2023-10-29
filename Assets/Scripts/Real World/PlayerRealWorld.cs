@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerRealWorld : Player
 {
-    private NPC takenOverNPC;
+    public NPC takenOverNPC;
     [SerializeField] private float propsDetectionRadius = 5f;
     [SerializeField] private Prop[] props;
     [SerializeField] private NPC[] npcs;
