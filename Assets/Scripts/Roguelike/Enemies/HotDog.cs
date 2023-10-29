@@ -78,16 +78,6 @@ public class HotDog : Enemy
 
 		jumpStartPos.y = jumpEndPos.y = jumpAnchor.y = 0f;
 		isJumping = true;
-
-		/*
-		return;
-		Vector3 direction = GameManager.Instance.GetPlayer().transform.position - transform.position;
-		direction.Normalize();
-		direction += Vector3.up * jumpForceUp;
-		direction *= jumpForce;
-		
-		rb.AddForce(direction + new Vector3(Random.Range(0, .2f), Random.Range(0, .2f), Random.Range(0, .2f)), ForceMode.Impulse);
-		*/
 	}
 	
 	void JumpBack()
@@ -108,16 +98,6 @@ public class HotDog : Enemy
 
 		jumpStartPos.y = jumpEndPos.y = jumpAnchor.y = 0f;
 		isJumping = true;
-
-		/*
-		return;
-		Vector3 direction = transform.position - GameManager.Instance.GetPlayer().transform.position;
-		direction.Normalize();
-		direction += Vector3.up * jumpForceUp;
-		direction *= jumpForce;
-
-		rb.AddForce(direction + new Vector3(Random.Range(0, .2f), Random.Range(0, .2f), Random.Range(0, .2f)), ForceMode.Impulse);
-		*/
 	}
 
 	Vector3 Lerp(float t) {
