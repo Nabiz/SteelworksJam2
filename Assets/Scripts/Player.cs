@@ -85,14 +85,6 @@ public class Player : Entity
 		weapon.Fire();
 	}
 
-	protected virtual void OnCollisionEnter(Collision other)
-	{
-		if (other.gameObject.CompareTag("Enemy"))
-		{
-			HP -= other.gameObject.GetComponent<Enemy>().contactDamage;
-		}
-	}
-	
 	public void EquipWeapon1()
 	{
 		weaponPrefab[0].SetActive(true);

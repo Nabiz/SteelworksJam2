@@ -762,6 +762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoguePlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 2222851529943590754, guid: 162cafe380a10c942a28490ab13117a5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2734705797870959752, guid: 162cafe380a10c942a28490ab13117a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -812,11 +817,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4893683591659713077, guid: 162cafe380a10c942a28490ab13117a5,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 3760251651958757205}
+    - target: {fileID: 7962505696288770269, guid: 162cafe380a10c942a28490ab13117a5,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 3760251651958757205}
+    - target: {fileID: 8151914534923203329, guid: 162cafe380a10c942a28490ab13117a5,
+        type: 3}
+      propertyPath: spawner
+      value: 
+      objectReference: {fileID: 3760251651958757205}
+    m_RemovedComponents:
+    - {fileID: 3311755127149225233, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
+    - {fileID: 7755475045543758989, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
+    - {fileID: 5108863876943786401, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
+    - {fileID: 2415480598088266224, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
+    - {fileID: 6218766507088091200, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 162cafe380a10c942a28490ab13117a5, type: 3}
+--- !u!114 &3760251651958757205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5691477102071796109, guid: 162cafe380a10c942a28490ab13117a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 8850462435154429656}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7b51f5122e3364ea59f09a96ef5a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6854629121903639120 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2734705797870959752, guid: 162cafe380a10c942a28490ab13117a5,

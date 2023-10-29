@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public abstract class Enemy : Entity
 {
-	public float contactDamage;
 	[SerializeField] protected float speed;
 	
 	private void Awake()
