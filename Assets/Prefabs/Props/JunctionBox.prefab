@@ -5216,4 +5216,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   matchingNPC: 1
-  enemyPrefab: {fileID: 8887273038511911871, guid: 92be1aa676a39b748ae1abc4988aa67a, type: 3}
+  enemyPrefab: {fileID: 2374567691749698404, guid: a574740fd50d13a438c256157661978c, type: 3}
