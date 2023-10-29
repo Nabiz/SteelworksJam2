@@ -33,6 +33,7 @@ public class PlayerRealWorld : Player
         if (takenOverNPC)
         {
             GameManager.Instance.EnterRoguelike();
+            SoundManager.Instance.PlayMusic(2);
             return;
         }
         
@@ -71,6 +72,7 @@ public class PlayerRealWorld : Player
         currentSpeed = normalSpeed;
         ShowModel(true);
         transform.position += Vector3.up * 0.2f;
+        SoundManager.Instance.PlayMusic(1);
     }
 
     public List<Prop> GetNearestProps()

@@ -27,9 +27,9 @@ public class SoundManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    private void Update()
+    private void Start()
     {
-        musicQue = musicAudioSource.time;
+        PlayMusic(0);
     }
 
     public void PlaySound(int index)
@@ -39,8 +39,9 @@ public class SoundManager : MonoBehaviour
 
     public void PlayMusic(int index)
     {
+        musicQue = musicAudioSource.time;
         musicAudioSource.clip = music[index];
-        musicAudioSource.time = musicQue;
         musicAudioSource.Play();
+        musicAudioSource.time = musicQue;
     }
 }
