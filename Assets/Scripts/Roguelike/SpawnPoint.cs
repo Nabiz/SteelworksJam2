@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    public Enemy Spawn(GameObject enemyToSpawn)
+    [SerializeField] GameObject enemyToSpawn;
+    
+    public Enemy Spawn()
     {
         return Instantiate(enemyToSpawn, transform.position, Quaternion.identity, transform).GetComponent<Enemy>();
     }

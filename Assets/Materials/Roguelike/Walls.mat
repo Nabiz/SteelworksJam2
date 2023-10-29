@@ -83,5 +83,5 @@ Material:
     - _Color: {r: 0.9607843, g: 0.48201704, b: 0.3843137, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.25754437, g: 0.23366857, b: 0.8396226, a: 1}
-    - _WorldPhase: {r: 0, g: 0.4639173, b: 66.96557, a: 0}
+    - _WorldPhase: {r: 0, g: 0.19239411, b: 148.77007, a: 0}
   m_BuildTextureStacks: []

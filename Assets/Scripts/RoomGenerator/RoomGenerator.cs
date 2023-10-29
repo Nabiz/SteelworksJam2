@@ -50,7 +50,7 @@ public class RoomGenerator : MonoBehaviour
         {
             enemiesPrefabs.Add(prop.enemyPrefab);
         }
-        currentRoom.SpawnEnemies(enemiesPrefabs);
+        currentRoom.SpawnEnemies();
 
         for(int i=0; i < roomCount; i++)
         {
@@ -137,7 +137,7 @@ public class RoomGenerator : MonoBehaviour
         {
             enemiesPrefabs.Add(prop.enemyPrefab);
         }
-        currentRoom.SpawnEnemies(enemiesPrefabs);
+        currentRoom.SpawnEnemies();
     }
     
     List<Prop> SelectRandomProps(List<Prop> props)
