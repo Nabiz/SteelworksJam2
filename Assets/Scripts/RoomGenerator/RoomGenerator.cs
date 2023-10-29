@@ -42,6 +42,8 @@ public class RoomGenerator : MonoBehaviour
 
         GenerateRoom(roomPrefabs[0], Vector3.zero);
         currentRoom = roomList[0].GetComponent<Room>();
+        GameManager.Instance.GetPlayer().transform.position = new Vector3(0.0f, 1.0f, -2.5f);
+        GameManager.Instance.GetCamera().transform.position = new Vector3(0.0f, 10.0f, 0.0f);
         
         List<GameObject> enemiesPrefabs = new List<GameObject>();
         foreach (Prop prop in SelectRandomProps(propsList))
@@ -166,5 +168,6 @@ public class RoomGenerator : MonoBehaviour
         roomList.Clear();
         possibleRoomPosition.Clear();
         occupiedRoomPositions.Clear();
+
     }
 }
