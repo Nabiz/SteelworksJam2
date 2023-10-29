@@ -47,9 +47,15 @@ MonoBehaviour:
   roomCount: 15
   unitLenght: 1
   roomPrefabs:
-  - {fileID: 3894116656040041391, guid: e500ae01946e10c4989f2f3470b5d645, type: 3}
-  - {fileID: 7755834818232614568, guid: c1df302500b847a47a052c480d80d8c2, type: 3}
-  - {fileID: 8865188744092066430, guid: 37c7ca12ede73ea488f39b8fc22db72a, type: 3}
-  - {fileID: 8114716508029563120, guid: df2d3c1a8dc158c4bba55b3105005554, type: 3}
+  - {fileID: 5041727634512388466, guid: 485776204279fff4ba79e95549ce296a, type: 3}
+  - {fileID: 1106540530886889479, guid: c1df302500b847a47a052c480d80d8c2, type: 3}
+  - {fileID: 8818123730022581450, guid: 37c7ca12ede73ea488f39b8fc22db72a, type: 3}
+  - {fileID: 7209033720406837380, guid: df2d3c1a8dc158c4bba55b3105005554, type: 3}
+  - {fileID: 1492808151425359745, guid: dae8c42b643d9224ba370f9085c52678, type: 3}
+  - {fileID: 1212684239603596208, guid: fd26da785eb27e84691b9d8fc116cdf0, type: 3}
+  - {fileID: 230538722788661281, guid: 4049f2e777f026648abcc0456cb39f37, type: 3}
+  - {fileID: 5913576491129953707, guid: 3c8f5778cf28b57418462028d8c84322, type: 3}
+  - {fileID: 2235952019432657647, guid: 5890458e3a5d96443aec21f43d0628ca, type: 3}
   possibleRoomPosition: []
+  propsList: []
   currentRoom: {fileID: 0}
