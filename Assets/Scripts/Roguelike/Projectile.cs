@@ -42,29 +42,25 @@ public class Projectile : MonoBehaviour
     }
     //*/
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Entity"))
+        Entity target = other.gameObject.GetComponentInParent<Entity>();
+        bool hit;
+        if (currentPierceLifetime >= 0)
         {
-            if (currentPierceLifetime >= 0)
-            {
-                Entity target = other.gameObject.GetComponentInParent<Entity>();
-                bool hit;
-                if (target != null)
-				{
-                    weapon.OnTargetHit(target, this, out hit);
-                    if (!hit)
-                    {
-                        return;
-                    }
-                    target.HP -= damage;
-                    currentPierceLifetime = pierceCooldown;
+            if (target != null)
+			{
+                weapon.OnTargetHit(target, this, out hit);
+                if (!hit)
+                {
+                    return;
                 }
-
+                target.HP -= damage;
+                currentPierceLifetime = pierceCooldown;
             }
-
-            if (destroyOnCollide)
-                Destroy(gameObject);
         }
+
+        if (destroyOnCollide)
+            Destroy(gameObject);
     }
 }

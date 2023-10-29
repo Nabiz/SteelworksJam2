@@ -15,9 +15,10 @@ public class Door : MonoBehaviour
         if (locked)
             return;
         
-        if (other.gameObject.GetComponent<Player>() != null)
+        if (other.gameObject.GetComponentInParent<Player>() != null)
         {
-            other.gameObject.transform.position += playerOffset;
+            Player player = other.gameObject.GetComponentInParent<Player>();
+            player.gameObject.transform.position += playerOffset;
             Camera.main.transform.position += cameraOffset;
             roomGenerator.UpdateCurrentRoom();
             //other.GetComponent<Player>().weapon
