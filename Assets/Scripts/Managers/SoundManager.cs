@@ -37,11 +37,17 @@ public class SoundManager : MonoBehaviour
         audioSource.PlayOneShot(clips[index]);
     }
 
+    public void Stop()
+    {
+        musicAudioSource.time = 0;
+        musicAudioSource.Stop();
+    }
+
     public void PlayMusic(int index)
     {
-        musicQue = musicAudioSource.time;
+        // musicQue = musicAudioSource.time;
         musicAudioSource.clip = music[index];
         musicAudioSource.Play();
-        musicAudioSource.time = musicQue;
+        // musicAudioSource.time = musicQue;
     }
 }
