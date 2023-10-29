@@ -82,6 +82,7 @@ public class Player : Entity
 
 	public void Fire()
 	{
+		SoundManager.Instance.PlaySound(2);
 		weapon.Fire();
 	}
 

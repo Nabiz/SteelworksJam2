@@ -62,6 +62,7 @@ public class PlayerRealWorld : Player
         currentSpeed = takeoverSpeed;
         ShowModel(false);
         UberTutorial.Instance.SetTutorialText("Now you are in control\nWASD to move\nRMB to let him/her go\nGuide pedestrian to dangerous place\nSPACE to go inside mind and force him/her to commit suicide");
+        SoundManager.Instance.PlaySound(0);
     }
 
     public void ReleaseNPC()
@@ -74,7 +75,6 @@ public class PlayerRealWorld : Player
         currentSpeed = normalSpeed;
         ShowModel(true);
         transform.position += Vector3.up * 0.2f;
-        SoundManager.Instance.PlayMusic(1);
         UberTutorial.Instance.SetTutorialText("WASD to move\nGo near pedestrian and hit Space to take over control\n");
     }
 

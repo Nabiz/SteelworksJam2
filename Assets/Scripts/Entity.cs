@@ -43,6 +43,7 @@ public class Entity : MonoBehaviour
 
 	public virtual void Die()
     {
+	    SoundManager.Instance.PlaySound(1);
 		Destroy(gameObject);
     }
 }
