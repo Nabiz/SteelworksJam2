@@ -14,6 +14,8 @@ public abstract class Weapon : MonoBehaviour
 
     public Entity spawner;
 
+    protected bool needsReload = false;
+
     private void Awake()
 	{
         for (int i = 0; i < projectiles.Count; ++i)
@@ -46,10 +48,11 @@ public abstract class Weapon : MonoBehaviour
     {
         if (currentCooldown > 0)
 		{
-            return;
+            needsReload = true;
 		}
 		else
 		{
+            needsReload = false;
             currentCooldown = projectiles[combo].cooldown;
         }
     }
