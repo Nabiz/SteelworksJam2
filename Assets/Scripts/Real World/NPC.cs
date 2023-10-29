@@ -58,12 +58,14 @@ public class NPC : MonoBehaviour
 
     void GoTo(Vector3 target)
     {
-        navMeshAgent.destination = target;
+        if (navMeshAgent)
+            navMeshAgent.destination = target;
     }
 
     public void Die()
     {
-        Destroy(navMeshAgent);
+        StopAllCoroutines();
+        navMeshAgent.enabled = false;
         collider.enabled = true;
         gameObject.AddComponent<Rigidbody>();
     }

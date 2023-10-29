@@ -50,6 +50,12 @@ public class InputManager : MonoBehaviour
     
     public void Fire(InputAction.CallbackContext context)
     {
+        if (GameManager.Instance.gameState == Enums.GameState.realWorld)
+        {
+            return;
+        }
+        
+        else
         if (context.performed && GameManager.Instance.gameState == Enums.GameState.roguelike)
         {
             charged = true;
@@ -57,34 +63,29 @@ public class InputManager : MonoBehaviour
         }
         else if (context.canceled && charged)
         {
-            switch (GameManager.Instance.gameState)
-            {
-                case Enums.GameState.realWorld:
-                    break;
-                case Enums.GameState.roguelike:
-                    GameManager.Instance.GetPlayer().weapon.ReleaseCharge();
-                    charged = false;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            GameManager.Instance.GetPlayer().weapon.ReleaseCharge();
+            charged = false;
         }
         else if (context.canceled)
         {
-            switch (GameManager.Instance.gameState)
-            {
-                case Enums.GameState.realWorld:
-                    ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
-                    break;
-                case Enums.GameState.roguelike:
-                    GameManager.Instance.GetPlayer().Fire();
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            GameManager.Instance.GetPlayer().Fire();
         }
     }
-    
+
+    public void Takeover(InputAction.CallbackContext context)
+    {
+        if (GameManager.Instance.gameState == Enums.GameState.roguelike)
+        {
+            return;
+        }
+        
+        if (!context.performed)
+        {
+            return;
+        }
+        ((PlayerRealWorld)GameManager.Instance.GetPlayer()).Takeover();
+    }
+
     public void RightClick(InputAction.CallbackContext context)
     {
         if (context.performed)

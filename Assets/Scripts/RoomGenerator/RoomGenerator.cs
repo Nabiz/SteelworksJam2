@@ -16,6 +16,7 @@ public class RoomGenerator : MonoBehaviour
     [SerializeField] private List<GameObject> roomPrefabs;
     [SerializeField] private List<Vector3> possibleRoomPosition;
     private List<Vector3> occupiedRoomPositions = new List<Vector3>();
+    public List<Prop> propsList = new List<Prop>();
 
     private List<GameObject> roomList = new List<GameObject>();
      
@@ -33,8 +34,9 @@ public class RoomGenerator : MonoBehaviour
         }
     }
 
-    public void Generate(List<Prop> propsList)
+    public void Generate(List<Prop> _propsList)
     {
+        propsList = new List<Prop>(_propsList);
         xDimension = 19.20f * unitLenght;
         zDimension = 10.80f * unitLenght;
 
@@ -124,6 +126,16 @@ public class RoomGenerator : MonoBehaviour
                 currentRoom = room.GetComponent<Room>();
             }
         }
+        
+        if (currentRoom.cleared)
+            return;
+        
+        List<GameObject> enemiesPrefabs = new List<GameObject>();
+        foreach (Prop prop in SelectRandomProps(propsList))
+        {
+            enemiesPrefabs.Add(prop.enemyPrefab);
+        }
+        currentRoom.SpawnEnemies(enemiesPrefabs);
     }
     
     List<Prop> SelectRandomProps(List<Prop> props)

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    public void Spawn(GameObject enemyToSpawn)
+    public Enemy Spawn(GameObject enemyToSpawn)
     {
-        Instantiate(enemyToSpawn, transform.position, Quaternion.identity, transform);
+        return Instantiate(enemyToSpawn, transform.position, Quaternion.identity, transform).GetComponent<Enemy>();
     }
 }

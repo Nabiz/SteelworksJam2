@@ -76,6 +76,7 @@ public class GameManager : MonoBehaviour
 
     public void ClearRoom()
     {
+        clearedRooms++;
         if (clearedRooms == 3)
         {
             EnterRealWorld();
@@ -91,7 +92,8 @@ public class GameManager : MonoBehaviour
         roomGenerator.Cleanup();
         realWorld.SetActive(true);
         roguelikeWorld.SetActive(false);
-        score += 100;
+        score += 1;
+        RealWorldUI.Instance.GetScoreText().text = $"Harvested souls: {score}";
         ((PlayerRealWorld)GetPlayer()).takenOverNPC.Die();
         ((PlayerRealWorld)GetPlayer()).ReleaseNPC();
     }

@@ -16,9 +16,9 @@ public class KeyboardEnemy : Enemy
 			animator.SetTrigger("Walk");
 			for (float i = 0; i < Random.Range(2f, 3f); i += Time.deltaTime)
 			{
-				Move(facingDir);
+				Move(facingDir * Time.deltaTime);
 				RotateAngle(2f);
-				yield return null;
+				yield return new WaitForEndOfFrame();
 			}
 			yield return new WaitForSeconds(0.1f);
 			speed = 0;

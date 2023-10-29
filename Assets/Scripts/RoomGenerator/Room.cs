@@ -10,6 +10,7 @@ public class Room : MonoBehaviour
     public GameObject doorRight;
     public GameObject doorLeft;
 
+    public bool cleared;
     public List<SpawnPoint> spawnPoints;
     public List<Enemy> enemies;
 
@@ -19,10 +20,14 @@ public class Room : MonoBehaviour
         {
             if (enemiesInRoom.Count == 0)
                 break;
-            spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count - 1)]);
+            enemies.Add(spawnPoint.Spawn(enemiesInRoom[Random.Range(0, enemiesInRoom.Count - 1)]));
         }
         if (spawnPoints.Count == 0 || enemiesInRoom.Count == 0)
+        {
+            GameManager.Instance.ClearRoom();
+            cleared = true;
             UnlockDoors();
+        }
     }
 
     public void EnemyDied(Enemy enemy)
@@ -31,6 +36,7 @@ public class Room : MonoBehaviour
         if (enemies.Count == 0)
         {
             GameManager.Instance.ClearRoom();
+            cleared = true;
             UnlockDoors();
         }
     }
