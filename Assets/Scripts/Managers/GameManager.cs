@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     public void ClearRoom()
     {
         clearedRooms++;
-        if (clearedRooms == 3)
+        if (clearedRooms == 4)
         {
             EnterRealWorld();
             clearedRooms = 0;
