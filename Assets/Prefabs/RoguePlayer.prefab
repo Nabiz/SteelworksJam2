@@ -818,6 +818,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glaive
       objectReference: {fileID: 0}
+    - target: {fileID: 7272742604521240060, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272742604521240060, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272742604521240060, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272742604521240060, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7272742604521240060, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8358563829045269282, guid: 641dea1b1bf07a3468334a71b721fc02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
