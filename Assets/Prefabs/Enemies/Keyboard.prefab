@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1582585291941755619}
+  - component: {fileID: 1533816731937866102}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -34,6 +35,27 @@ Transform:
   - {fileID: 6364906747302507403}
   m_Father: {fileID: 395291698168060372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1533816731937866102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200323180042140905}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.17, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1515743966956875211
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +237,6 @@ GameObject:
   - component: {fileID: 8106228532458634375}
   - component: {fileID: 7149120401871509299}
   - component: {fileID: 5647212433842012708}
-  - component: {fileID: 6307369882946047999}
   m_Layer: 0
   m_Name: Keyboard
   m_TagString: Enemy
@@ -303,32 +324,12 @@ MonoBehaviour:
   weapon: {fileID: 0}
   rb: {fileID: 7149120401871509299}
   facingDir: {x: 0, y: 1}
-  contactDamage: 5
   speed: 4
   animator: {fileID: 8106228532458634375}
-  normalSpeed: 4
-  dashSpeed: 8
---- !u!65 &6307369882946047999
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2374567691749698404}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  state: 0
+  waitTimer: 0
+  nextState: 0
+  requiredState: 0
 --- !u!1 &2715667823692762365
 GameObject:
   m_ObjectHideFlags: 0
