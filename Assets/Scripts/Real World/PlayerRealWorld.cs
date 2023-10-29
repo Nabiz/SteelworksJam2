@@ -25,7 +25,7 @@ public class PlayerRealWorld : Player
         if (!takenOverNPC)
             return;
         
-        takenOverNPC.transform.position = transform.position + Vector3.up * 0.5f;
+        takenOverNPC.transform.position = transform.position + Vector3.up * 0.2f;
     }
 
     public void Takeover()
@@ -70,6 +70,7 @@ public class PlayerRealWorld : Player
         takenOverNPC = null;
         currentSpeed = normalSpeed;
         ShowModel(true);
+        transform.position += Vector3.up * 0.2f;
     }
 
     public List<Prop> GetNearestProps()
