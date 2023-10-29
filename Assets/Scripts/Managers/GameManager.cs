@@ -70,6 +70,7 @@ public class GameManager : MonoBehaviour
         
         // realWorldPlayer.isControlled = false;
         // roguelikePlayer.isControlled = true;
+        GetPlayer().HP = 100;
         realWorld.SetActive(false);
         roomGenerator.Generate(realWorldPlayer.GetNearestProps());
         roguelikeWorld.SetActive(true);
