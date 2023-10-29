@@ -16,8 +16,5 @@ public class JunctionBox : Enemy
 
     }
 
-    protected override IEnumerator AI()
-    {
-        yield break;
-    }
+    
 }
