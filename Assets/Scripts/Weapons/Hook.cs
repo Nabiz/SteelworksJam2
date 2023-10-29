@@ -14,8 +14,10 @@ public class Hook : Weapon
 		if (combo == 0)
 		{
 			base.Fire();
+			if (needsReload) return;
 			HookTip = SpawnProj(combo, spawner.facingDir, false);
 		}
+		/*
 		else if (combo == 1) //lodge hook in the ground
 		{
 			//HookTip.lifetime = 10000;
@@ -28,6 +30,7 @@ public class Hook : Weapon
 			spawner.rb.AddForce(Vector3.Normalize(HookTip.transform.position - spawner.transform.position) * pullStrength * Vector3.Distance(spawner.transform.position, HookTip.transform.position), ForceMode.Impulse);
 			Destroy(HookTip.gameObject);
 		}
+		*/
 
 		combo += 1;
 		if (combo >= 3)

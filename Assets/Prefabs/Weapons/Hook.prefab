@@ -555,7 +555,6 @@ MonoBehaviour:
   - {fileID: 3314235781061684680}
   currentCooldown: 0
   combo: 0
-  charge: 0
   spawner: {fileID: 0}
   HookTip: {fileID: 0}
   PlayerPivot: {fileID: 0}
@@ -615,13 +614,9 @@ MonoBehaviour:
   cooldown: 0.4
   speed: 4
   damage: 5
-  lifetime: 1000000
+  lifetime: 10000
   destroyOnCollide: 0
-  pierceCooldown: 1
-  pierceLifetime: 1
-  sprite: {fileID: 0}
   weapon: {fileID: 0}
-  currentPierceLifetime: 0
 --- !u!54 &8493262197522140506
 Rigidbody:
   m_ObjectHideFlags: 0
