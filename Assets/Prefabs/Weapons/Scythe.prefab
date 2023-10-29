@@ -356,7 +356,7 @@ MonoBehaviour:
   currentCooldown: 0
   combo: 0
   spawner: {fileID: 0}
-  knockback: 10
+  knockback: 15
 --- !u!1 &3846889084277806880
 GameObject:
   m_ObjectHideFlags: 0

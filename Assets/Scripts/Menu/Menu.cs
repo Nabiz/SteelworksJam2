@@ -8,7 +8,8 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
-        SoundManager.Instance.PlayMusic(1);
+        if (SoundManager.Instance)
+            SoundManager.Instance.PlayMusic(1);
     }
 
     public void StartIntro()

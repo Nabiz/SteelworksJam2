@@ -31,6 +31,7 @@ public abstract class Enemy : Entity
 	{
 		player = GameManager.Instance.GetPlayer();
 		animator = gameObject.GetComponentInChildren<SpriteAnimator>();
+		weapon = gameObject.GetComponentInChildren<Weapon>();
 	}
 
 	protected void WaitStateHandler()
