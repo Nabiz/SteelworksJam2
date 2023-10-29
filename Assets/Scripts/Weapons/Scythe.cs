@@ -8,6 +8,7 @@ public class Scythe : Weapon
 	public override void Fire()
 	{
 		base.Fire();
+		if (needsReload) return;
 		if (combo == 0)
 		{
 			//first attack pushes forward

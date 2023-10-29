@@ -12,7 +12,12 @@ public class DummyPistol : Weapon
 	public override void Fire()
 	{
 		base.Fire();
-		Debug.Log("fired with" + currentCooldown);
+		if (needsReload) return;
+		//Debug.Log("fired with" + currentCooldown);
 		SpawnProj(combo, spawner.facingDir, false);
+		if(combo > projectiles.Count)
+		{
+			combo = 0;
+		}
 	}
 }
