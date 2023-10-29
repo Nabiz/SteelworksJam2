@@ -108,4 +108,9 @@ public class Player : Entity
 		weaponPrefab[2].SetActive(true);
 		weapon = weaponPrefab[2].GetComponent<Weapon>();
 	}
+
+	public override void Die()
+	{
+		GameManager.Instance.GameOver();
+	}
 }

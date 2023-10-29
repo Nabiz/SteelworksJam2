@@ -7,6 +7,7 @@ public class UI : MonoBehaviour
 {
     public static UI Instance;
     public Slider hpSlider;
+    public GameObject gameOverScreen;
     
     void Awake()
     {
@@ -19,5 +20,10 @@ public class UI : MonoBehaviour
     public Slider GetHPSlider()
     {
         return hpSlider;
+    }
+
+    public void GameOver()
+    {
+        gameOverScreen.SetActive(true);
     }
 }

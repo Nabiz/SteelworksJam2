@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -96,5 +97,16 @@ public class GameManager : MonoBehaviour
         RealWorldUI.Instance.GetScoreText().text = $"Harvested souls: {score}";
         ((PlayerRealWorld)GetPlayer()).takenOverNPC.Die();
         ((PlayerRealWorld)GetPlayer()).ReleaseNPC();
+    }
+    
+    public void GameOver()
+    {
+        UI.Instance.GameOver();
+    }
+
+    public void BackToMenu()
+    {
+        GetPlayer().isControlled = false;
+        SceneManager.LoadScene("Menu");
     }
 }

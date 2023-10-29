@@ -13,14 +13,15 @@ public abstract class Weapon : MonoBehaviour
     private int _combo;
     protected int combo
     {
-	    get { return _combo; }
+	    get {
+		    return _combo;
+	    }
 	    set {
-		    StopCoroutine(ComboDecay());
 		    _combo = value;
-		    StopCoroutine(ComboDecay());
 	    }
     }
-
+    
+    // nie działa
     IEnumerator ComboDecay()
     {
 	    while (combo > 0)
