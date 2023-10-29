@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 6a57f2ea4313c87498858d084dc4d756, type: 3}
 --- !u!1 &2925917427368468641
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332c70ec00b07d4bb59e4f422c3e63c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyToSpawn: {fileID: 1781859674616141302, guid: 6a57f2ea4313c87498858d084dc4d756, type: 3}
 --- !u!1001 &1817713299192213536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,7 +174,7 @@ PrefabInstance:
       objectReference: {fileID: 975612795068760723}
     - target: {fileID: 3894116656040041391, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
       propertyPath: m_Name
-      value: Room04 Variant
+      value: Room04
       objectReference: {fileID: 0}
     - target: {fileID: 3950798453280269163, guid: 5b0afa372fda05442a08fbfcdf2299e1, type: 3}
       propertyPath: m_LocalPosition.x
