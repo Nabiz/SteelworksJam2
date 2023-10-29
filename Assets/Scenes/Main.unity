@@ -846,7 +846,7 @@ PrefabInstance:
     - target: {fileID: 6379927263890445139, guid: 9078ec6859fac434f998987c5635d471, type: 3}
       propertyPath: enemyPrefab
       value: 
-      objectReference: {fileID: 1781859674616141302, guid: b654ac2ec48ad494a9ac65b8e9d7471a, type: 3}
+      objectReference: {fileID: 1781859674616141302, guid: 6a57f2ea4313c87498858d084dc4d756, type: 3}
     - target: {fileID: 6446616577359680351, guid: 9078ec6859fac434f998987c5635d471, type: 3}
       propertyPath: m_Name
       value: Overworld
