@@ -102,12 +102,12 @@ public class GameManager : MonoBehaviour
     
     public void GameOver()
     {
+        GetPlayer().isControlled = false;
         UI.Instance.GameOver();
     }
 
     public void BackToMenu()
     {
-        GetPlayer().isControlled = false;
         SceneManager.LoadScene("Menu");
     }
 }
