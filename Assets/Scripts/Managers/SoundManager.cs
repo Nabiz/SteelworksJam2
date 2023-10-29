@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance;
 
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioSource musicAudioSource;
+    [SerializeField] public AudioSource musicAudioSource;
     [SerializeField] private AudioClip[] music;
     [SerializeField] private AudioClip[] clips;
 
