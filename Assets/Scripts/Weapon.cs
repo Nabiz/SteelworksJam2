@@ -9,7 +9,35 @@ public abstract class Weapon : MonoBehaviour
     //[SerializeField] protected float cooldown; //proj schould be heaving cooldown
 
     [SerializeField] private float currentCooldown;
-    [SerializeField] protected int combo;
+
+    private int _combo;
+    protected int combo
+    {
+	    get { return _combo; }
+	    set {
+		    StopCoroutine(ComboDecay());
+		    _combo = value;
+		    StopCoroutine(ComboDecay());
+	    }
+    }
+
+    IEnumerator ComboDecay()
+    {
+	    while (combo > 0)
+	    {
+		    float i = 1f;
+		    while (i >= 0f)
+		    {
+			    i -= Time.deltaTime;
+			    yield return null;
+		    }
+
+		    combo--;
+		    yield return null;
+	    }
+	    yield return null;
+    }
+
     [SerializeField] public float charge;
 
     public Entity spawner;

@@ -46,6 +46,10 @@ public class Leszy : Enemy
 
     protected override IEnumerator AI()
     {
-        yield return null;
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(2f, 3f));
+            weapon.Fire();
+        }
     }
 }

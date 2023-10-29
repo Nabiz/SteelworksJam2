@@ -19,8 +19,7 @@ public class Scythe : Weapon
 		{
 			SpawnProj(combo, spawner.facingDir, true);
 		}
-
-
+		
 		combo += 1;
 		if (combo >= 2)
 		{
