@@ -4,6 +4,56 @@ using UnityEngine;
 
 public class KeyboardEnemy : Enemy
 {
+	[SerializeField] private float maxSpeed = 2f;
+
+	void FixedUpdate()
+	{
+		WaitStateHandler();
+
+		Vector3 movementDir = player.transform.position - gameObject.transform.position;
+		facingDir = Vector3.Normalize(player.transform.position - gameObject.transform.position);
+
+		if (Vector3.Distance(player.transform.position, transform.position) < 1.5f) {
+			movementDir = -movementDir;
+			Attack();
+		}
+
+		Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+		Vector3 resultantForce = Vector3.zero;
+
+		for (int i = 0; i < colliders.Length; i++) {
+			if (colliders[i].gameObject != gameObject) {
+				Vector3 dir = transform.position - colliders[i].transform.position;
+				resultantForce += dir.normalized;
+			}
+		}
+
+		movementDir += resultantForce;
+
+		rb.AddForce(movementDir * speed, ForceMode.Impulse);
+		rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+	}
+
+	void OnDrawGizmos() {
+		Gizmos.DrawWireSphere(transform.position, 1f);
+
+		Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
+		Vector3 resultantForce = Vector3.zero;
+
+		for (int i = 0; i < colliders.Length; i++) {
+			if (colliders[i].gameObject != gameObject) {
+				Vector3 dir = transform.position - colliders[i].transform.position;
+				resultantForce += dir.normalized;
+			}
+		}
+
+		Gizmos.color = Color.red;
+		Gizmos.DrawRay(transform.position, resultantForce);
+		Vector3 movementDir = new Vector3(facingDir.x, 0, facingDir.y);
+		Gizmos.color = Color.green;
+		Gizmos.DrawRay(transform.position, movementDir);
+	}
+
 	/*
 	[SerializeField] private Animator animator;
 	[SerializeField] private float normalSpeed;
