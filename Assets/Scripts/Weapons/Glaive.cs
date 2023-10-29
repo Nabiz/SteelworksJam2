@@ -52,8 +52,15 @@ public class Glaive : Weapon
 			turret = SpawnProj(combo, new Vector2(0, 0), false);
 			combo = 5;
 		}
+		else
+		{
+			//unSetTurret
+			Destroy(turret.gameObject);
+			combo = 0;
+		}
 	}
 
+	/*
 	public override void OnTargetHit(Entity target, Projectile source, out bool hit)
 	{
 		base.OnTargetHit(target, source, out hit);
@@ -65,4 +72,5 @@ public class Glaive : Weapon
 		}
 		hit = true;
 	}
+	*/
 }

@@ -552,6 +552,11 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &479065462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2994235186982484832, guid: af96fcc9824d46d4faa867bb4ac4344f, type: 3}
+  m_PrefabInstance: {fileID: 3782077778464668582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &632679578 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6446616577359680351, guid: 9078ec6859fac434f998987c5635d471, type: 3}
@@ -807,6 +812,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 409361976}
+    - target: {fileID: 3760251651958757205, guid: af96fcc9824d46d4faa867bb4ac4344f, type: 3}
+      propertyPath: weaponPrefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 479065462}
     - target: {fileID: 5909923669737197990, guid: af96fcc9824d46d4faa867bb4ac4344f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
