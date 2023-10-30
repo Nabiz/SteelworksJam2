@@ -243,17 +243,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3687f8712bb4a4484279e8eb5ce5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  hp: 30
   weapon: {fileID: 5574498987738140034}
   rb: {fileID: 1887406330118387740}
   facingDir: {x: 0, y: 0}
-  speed: 1
+  speed: 2
   animator: {fileID: 0}
   state: 0
   waitTimer: 0
   nextState: 0
   requiredState: 0
   maxSpeed: 3
+  attackSpeed: 0.5
 --- !u!1001 &6062242839295415712
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -6,6 +6,10 @@ public class KeyboardEnemy : Enemy
 {
 	[SerializeField] private float maxSpeed = 2f;
 
+	[SerializeField] private float attackSpeed = 0.5f;
+
+	float attackCooldown = 0f;
+
 	void FixedUpdate()
 	{
 		WaitStateHandler();
@@ -13,9 +17,15 @@ public class KeyboardEnemy : Enemy
 		Vector3 movementDir = player.transform.position - gameObject.transform.position;
 		facingDir = Vector3.Normalize(player.transform.position - gameObject.transform.position);
 
-		if (Vector3.Distance(player.transform.position, transform.position) < 1.5f) {
+		attackCooldown -= Time.deltaTime;
+
+		if (Vector3.Distance(player.transform.position, transform.position) < 1.2f) {
 			movementDir = -movementDir;
-			Attack();
+
+			if (attackCooldown <= 0f) {
+				Attack();
+				attackCooldown = attackSpeed;
+			}
 		}
 
 		Collider[] colliders = Physics.OverlapSphere(transform.position, 1f);
